@@ -2944,7 +2944,7 @@ main {}
 		color: #fff;
 	}
 
-	.cast_inner .banner p: {
+	.cast_inner .banner p{
 		line-height: 1.095;
 		/*23 / 21*/
 		font-size: 2.1rem;
@@ -3023,7 +3023,6 @@ main {}
 	}
 
 	.knowhow_inner .section_slider div a {
-		display: inline-block;
 		width: 61.5%;
 		/*370/606*/
 		height: 253px;
@@ -3913,6 +3912,20 @@ main {}
 		width: 66.46%;
 	}
 
+	.cast_inner .title h2 {
+		font-size: 8rem;
+	}
+
+	.cast_inner .title a{
+		width: 330px;
+		padding-left: 20px;
+		text-align: left;
+		font-size: 2.2rem;
+	}
+	.cast_inner .title a:after{
+		margin-left: 30px;
+	}
+
 	.cast_inner .section_slider {
 		width: 47%;
 		height: 897px;
@@ -3976,6 +3989,7 @@ main {}
 		position: absolute;
 		left: 0;
 		top: 327px;
+		pointer-events: none;
 	}
 
 	.cast_inner .banner:before {
@@ -4112,7 +4126,7 @@ main {}
 		right: 0;
 		width: 66.65%;
 		height: 300px;
-		padding-top: 31px;
+		padding-top: 56px;
 		padding-right: 15px;
 		text-align: right;
 		z-index: 20;
@@ -4120,11 +4134,20 @@ main {}
 
 	.knowhow_inner .title a {
 		position: absolute;
-		right: 0;
+		right: 15px;
+		width: 330px;
+		padding-left: 20px;
+		text-align: left;
+		font-size: 2.2rem;
+	}
+
+	.knowhow_inner .title a:after{
+		margin-left: 30px;
 	}
 
 	.knowhow_inner h2 {
 		color: #fff;
+		font-size: 8rem;
 	}
 
 	.knowhow_inner .section_slider {
@@ -4255,11 +4278,53 @@ main {}
 	}
 
 	#friends {
-		padding: 156px 119px;
+		padding: 156px 0 119px;
+		height: 1170px;
 	}
 
 	.friends_inner {
 		width: 66.46%;
+		height: 100%;
+		position: relative;
+	}
+
+	.friends_inner .title{
+		width: auto;
+		height: auto;
+	}
+
+	.friends_inner .title h3 {
+		font-size: 8rem;
+	}
+
+	.friends_inner .title a{
+		width: 330px;
+		padding-left: 20px;
+		text-align: left;
+		font-size: 2.2rem;
+	}
+
+	.friends_inner .title a:after{
+		margin-left: 30px;
+	}
+
+	.friends_inner .friends_b{
+		width: 50%;
+		height: 597px;
+		position: absolute;
+		left: 0;
+		top: 300px;
+		margin-top:0;
+	}
+	.friends_inner .banner:nth-of-type(2){
+		width: 50%;
+		position: absolute;
+		right: 11%;
+		top: 49px;
+	}
+
+	.friends_inner .box{
+		display: none;
 	}
 
 	.sns_inner {
