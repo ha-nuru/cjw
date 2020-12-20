@@ -168,6 +168,7 @@ button {
 /* 버튼 -인라인, label - 인라인, input - 인라인 (text-align 먹힘) 하나라도 블럭이면 안됨/inline-block 해줌*/
 /*z-index header 100이지만 상관없음*/
 .sch_wrap .sch_off {
+	display: inline-block;
 	font-size: 1.7rem;
 	color: #959595;
 }
@@ -2239,7 +2240,7 @@ button {
 	.nav_inner .sub_wrap {
 		position: absolute;
 		left: 0;
-		top: 136px;
+		top: 135px;
 		width: 100%;
 		border-top: 1px solid #cfcfcf;
 		background-color: #fff;
