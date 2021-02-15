@@ -2690,7 +2690,7 @@ button {
 		color: #000;
 	}
 	.knowhow_inner .section_slider div a > span {
-		display: inline-block;
+		display: block;
 		background-color: #fcb54d;
 		width: 200px;
 		height: 50px;
