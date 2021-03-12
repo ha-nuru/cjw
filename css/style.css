@@ -3,8 +3,8 @@
 @import url(http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 
 @font-face {
-	font-family: 'nbg';
-	src: url(fonts/NanumBarunGothic.woff);
+  font-family: "nbg";
+  src: url(fonts/NanumBarunGothic.woff);
 }
 /*reset*/
 body,
@@ -49,4029 +49,3858 @@ i,
 sup,
 sub,
 address {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 html {
-	font-size: 0.625em;
+  font-size: 0.625em;
 }
 /* 10 / 16 */
 body {
-	font-family: 'Spoqa Han Sans', "돋움", dotum, sans-serif;
-	color: #343434;
-	line-height: 1;
+  font-family: "Spoqa Han Sans", "돋움", dotum, sans-serif;
+  color: #343434;
+  line-height: 1;
 }
 html,
 body {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 a {
-	text-decoration: none;
-	color: #343434;
+  text-decoration: none;
+  color: #343434;
 }
 ul,
 ol,
 li {
-	list-style: none;
+  list-style: none;
 }
 img,
 fieldset {
-	border: none;
-	vertical-align: middle;
+  border: none;
+  vertical-align: middle;
 }
 strong,
 em,
 b,
 i,
 address {
-	font-weight: normal;
-	font-style: normal;
+  font-weight: normal;
+  font-style: normal;
 }
 table {
-	border-collapse: collapse;
+  border-collapse: collapse;
 }
 button {
-	border: none;
-	background-color: transparent;
-	cursor: pointer;
-	font-family: 'Spoqa Han Sans', "돋움", dotum, sans-serif;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "Spoqa Han Sans", "돋움", dotum, sans-serif;
 }
 
 /*common*/
 .hide {
-	display: none;
+  display: none;
 }
 .blind {
-	position: absolute;
-	left: -9999px;
+  position: absolute;
+  left: -9999px;
 }
 .clear:after {
-	content: "";
-	clear: both;
-	display: block;
+  content: "";
+  clear: both;
+  display: block;
 }
 .pc {
-	display: none;
+  display: none;
 }
-.mobile {display: block;}
-
-.pc_only{
-	display: none;
+.mobile {
+  display: block;
+}
+.pc_only {
+  display: none;
 }
 
 /*header*/
 #header {
-	width: 100%;
-	height: 75px;
-	position: fixed;
-	left: 0;
-	top: 0;
-	z-index: 100;
-	background-color: #fff;
+  width: 100%;
+  height: 75px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
 }
 .logo {
-	width: 91px;
-	position: absolute;
-	left: 50%;
-	top: 21px;
-	margin-left: -46px;
+  width: 91px;
+  position: absolute;
+  left: 50%;
+  top: 21px;
+  margin-left: -46px;
 }
-/*transform:traslateX(-50%)*/
 .logo img {
-	width: 100%;
+  width: 100%;
 }
 .sch_form .sch_on {
-	width: 20px;
-	height: 20px;
-	position: absolute;
-	left: 4.667%;
-	top: 27px;
-	background: url(../img/cjw-icon-search1.png) no-repeat;
-	background-size: contain;
-	text-indent: -9999px;
-	overflow: hidden;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 4.667%;
+  top: 27px;
+  background: url(../img/cjw-icon-search1.png) no-repeat;
+  background-size: contain;
+  text-indent: -9999px;
+  overflow: hidden;
 }
-/* left : 4.667% -  35 / 750 */
 .sch_wrap {
-	width: 100%;
-	height: 100%;
-	display: none;
-	position: absolute;
-	left: 0;
-	top: 0;
-	z-index: 10;
-	background-color: #fff;
-	text-align: center;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+  text-align: center;
 }
-/*position 부모 태그 잡혀있을때 height:100%*/
-/* 버튼 -인라인, label - 인라인, input - 인라인 (text-align 먹힘) 하나라도 블럭이면 안됨/inline-block 해줌*/
-/*z-index header 100이지만 상관없음*/
 .sch_wrap .sch_off {
-	display: inline-block;
-	font-size: 1.7rem;
-	color: #959595;
+  display: inline-block;
+  font-size: 1.7rem;
+  color: #959595;
 }
 .sch_wrap input {
-	width: 66.667%;
-	/* 500 / 750 */
-	height: 32px;
-	border: none;
-	border-radius: 3px;
-	background-color: #eee;
-	margin: 22px 2.133% 0;
-	/* 16 / 750 */
-	padding-left: 10px;
-	line-height: 32px;
-	font-size: 1.6rem;
-	color: #000;
+  width: 66.667%;
+  height: 32px;
+  border: none;
+  border-radius: 3px;
+  background-color: #eee;
+  margin: 22px 2.133% 0;
+  padding-left: 10px;
+  line-height: 32px;
+  font-size: 1.6rem;
+  color: #000;
 }
 .sch_wrap .btn_sch {
-	width: 45px;
-	height: 32px;
-	background: url(../img/cjw-icon-search2.png) no-repeat #777 center;
-	background-size: 15px;
-	text-indent: -9999px;
-	overflow: hidden;
-	border-radius: 3px;
+  width: 45px;
+  height: 32px;
+  background: url(../img/cjw-icon-search2.png) no-repeat #777 center;
+  background-size: 15px;
+  text-indent: -9999px;
+  overflow: hidden;
+  border-radius: 3px;
 }
 .btn_nav {
-	width: 24px;
-	height: 18px;
-	position: absolute;
-	right: 4.667%;
-	top: 29px;
+  width: 24px;
+  height: 18px;
+  position: absolute;
+  right: 4.667%;
+  top: 29px;
 }
 .btn_nav span {
-	display: block;
-	height: 4px;
-	background-color: #000;
-	text-indent: -9999px;
-	overflow: hidden;
-	border-radius: 4px;
-	/*height와 같이*/
+  display: block;
+  height: 4px;
+  background-color: #000;
+  text-indent: -9999px;
+  overflow: hidden;
+  border-radius: 4px;
 }
 .btn_nav span:nth-child(2) {
-	margin: 3px 0;
+  margin: 3px 0;
 }
-/*{전체 height: 18px} - {3span height(4 *3):12} = 6*/
 #navWrap {
-	display: none;
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	left: 0;
-	top: 0;
-	z-index: 100;
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
 }
 .mob_bg {
-	display: none;
-	width: 100%;
-	height: 100%;
-	z-index: 100;
-	background-color: rgba(0, 0, 0, .7);
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 #navWrap .nav_close {
-	width: 22px;
-	height: 22px;
-	position: absolute;
-	left: 26%;
-	top: 24px;
-	z-index: 30;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 26%;
+  top: 24px;
+  z-index: 30;
 }
 #navWrap .nav_close a {
-	width: 100%;
-	height: 100%;
-	display: block;
-	background: url(../img/calpop_close2n.png)no-repeat;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: url(../img/calpop_close2n.png) no-repeat;
 }
 .nav_inner {
-	width: 67.733%;
-	height: 100%;
-	position: absolute;
-	right: -100%;
-	top: 0;
-	background-color: #fff;
-	padding-top: 31px;
-	overflow: auto;
+  width: 67.733%;
+  height: 100%;
+  position: absolute;
+  right: -100%;
+  top: 0;
+  background-color: #fff;
+  padding-top: 31px;
+  overflow: auto;
 }
-/* 508 / 750*/
 .nav_inner > div {
-	width: 83.071%;
-	/* 422 /  508 */
-	margin-left: 7.087%;
-	/* 36 /  508 */
-	margin-bottom: 24px;
+  width: 83.071%;
+  margin-left: 7.087%;
+  margin-bottom: 24px;
 }
 .nav_inner > div a:nth-child(1) {
-	width: 61px;
-	height: 22px;
-	float: left;
-	background: url(../img/cjw-logo-header.png) no-repeat;
-	background-size: contain;
-	text-indent: -9999px;
-	overflow: hidden;
+  width: 61px;
+  height: 22px;
+  float: left;
+  background: url(../img/cjw-logo-header.png) no-repeat;
+  background-size: contain;
+  text-indent: -9999px;
+  overflow: hidden;
 }
-/*float사용 부모 높이 사라짐/ margin-bottom 오류*/
 .nav_inner > div a:nth-child(2) {
-	float: right;
-	font-size: 1.3rem;
-	color: #02b5d6;
-	line-height: 22px;
+  float: right;
+  font-size: 1.3rem;
+  color: #02b5d6;
+  line-height: 22px;
 }
 .nav_inner > a {
-	display: block;
-	height: 58px;
-	line-height: 56px;
-	/*border 2px 뺀값*/
-	background-color: #02b5d6;
-	color: #fff;
-	font-size: 1.7rem;
-	border-bottom: 2px solid rgba(255, 255, 255, .5);
-	/*border는 나누지 않음*/
-	padding-left: 11.023%;
-	position: relative;
+  display: block;
+  height: 58px;
+  line-height: 56px;
+  background-color: #02b5d6;
+  color: #fff;
+  font-size: 1.7rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  padding-left: 11.023%;
+  position: relative;
 }
 .nav_inner > a:after {
-	content: "";
-	width: 27px;
-	height: 27px;
-	display: block;
-	background: url(../img/cjw-icon-login.png) no-repeat;
-	position: absolute;
-	right: 10.433%;
-	/*53 / 508 */
-	top: 50%;
-	margin-top: -14px;
-	/*transform:translateY(-50%); */
-	background-size: contain;
+  content: "";
+  width: 27px;
+  height: 27px;
+  display: block;
+  background: url(../img/cjw-icon-login.png) no-repeat;
+  position: absolute;
+  right: 10.433%;
+  /*53 / 508 */
+  top: 50%;
+  margin-top: -14px;
+  background-size: contain;
 }
-/*top:50% 하고 height 27의 절반 14 / margin-top:14px 하면 가운데 정렬*/
-
 .nav_inner > a:last-child {
-	border-bottom: none;
-	height: 57px;
+  border-bottom: none;
+  height: 57px;
 }
 .nav_inner > a:last-child:after {
-	content: "";
-	display: block;
-	background-image: url(../img/cjw-icon-phone.png);
-	right: 9.843%;
-	/*50 / 508 */
+  content: "";
+  display: block;
+  background-image: url(../img/cjw-icon-phone.png);
+  right: 9.843%;
+  /*50 / 508 */
 }
 .nav_inner .gnb {
-	width: 83.071%;
-	margin-left: 7.087%;
-	border-top: 2px solid #595959;
+  width: 83.071%;
+  margin-left: 7.087%;
+  border-top: 2px solid #595959;
 }
 .nav_inner .gnb > li > a {
-	display: block;
-	height: 60px;
-	line-height: 59px;
-	border-bottom: 1px solid #959595;
-	font-size: 1.7rem;
-	color: #595959;
-	padding-left: 4.503%;
-	position: relative;
-	/* 19 /422 */
+  display: block;
+  height: 60px;
+  line-height: 59px;
+  border-bottom: 1px solid #959595;
+  font-size: 1.7rem;
+  color: #595959;
+  padding-left: 4.503%;
+  position: relative;
 }
-/*height에 border 포함*/
 .nav_inner .gnb > li.open + li > a {
-	border-top: 1px solid #959595;
+  border-top: 1px solid #959595;
 }
-/*li + li : li 의 형제 li*/
 .nav_inner .gnb > li:last-child > a {
-	border-bottom: none;
+  border-bottom: none;
 }
 .nav_inner .gnb > li:last-child.open > a {
-	border-bottom: 1px solid #959595;
+  border-bottom: 1px solid #959595;
 }
 .nav_inner .gnb > li > a span {
-	width: 15px;
-	height: 8px;
-	background: url(../img/cjw-arrow-nav-bottom.png) no-repeat;
-	background-size: contain;
-	position: absolute;
-	top: 50%;
-	right: 2.844%;
-	/* 12 / 422 */
-	margin-top: -4px;
-	/*transform:translateY(-50%);*/
+  width: 15px;
+  height: 8px;
+  background: url(../img/cjw-arrow-nav-bottom.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  right: 2.844%;
+  margin-top: -4px;
 }
-/*아이콘 만들때 - background-size:contain*/
 .nav_inner .gnb > li.open > a span {
-	background-image: url(../img/cjw-arrow-nav-top.png);
+  background-image: url(../img/cjw-arrow-nav-top.png);
 }
 .nav_inner .sub_wrap {
-	display: none;
+  display: none;
 }
 .nav_inner .open .sub_wrap {
-	display: block;
+  display: block;
 }
 .nav_inner .sub_wrap ul {
-	background-color: #f8f8f8;
+  background-color: #f8f8f8;
 }
 .nav_inner .sub_wrap ul li {
-	width: 89.578%;
-	/*378 /422*/
-	margin-left: 4.502%;
-	/*19 /422*/
-	border-bottom: 1px solid #cfcfcf;
+  width: 89.578%;
+  margin-left: 4.502%;
+  border-bottom: 1px solid #cfcfcf;
 }
 .nav_inner .sub_wrap ul:last-child li:last-child {
-	border-bottom: none;
+  border-bottom: none;
 }
 .nav_inner .sub_wrap ul li a {
-	display: block;
-	height: 45px;
-	line-height: 45px;
-	padding-left: 5.820%;
-	/*22 / 378 */
-	font-size: 1.4rem;
-	color: #747474;
+  display: block;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 5.82%;
+  font-size: 1.4rem;
+  color: #747474;
 }
-
-/*a 주변 영역 클릭 되야하기 때문 - margin 말고 padding 으로 줌*/
 .nav_inner .open .sub_wrap {
-	display: block;
+  display: block;
 }
 
 /*visual*/
 
 #visual {
-	margin-top: 75px;
-	position: relative;
+  margin-top: 75px;
+  position: relative;
 }
-/* #header - height:75px , fixed는 left top 줘야함(margin-top에 끌려감)*/
 .slider {
-	position: relative;
-	width: 100%;
-	height: 550px;
-	z-index: 20;
+  position: relative;
+  width: 100%;
+  height: 550px;
+  z-index: -1;
 }
 
 /*bxslider*/
 .bx-wrapper {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 .main_slider_controller {
-	display: inline-block;
-	position: absolute;
-	left: 50%;
-	bottom: 75px;
-	height: 12px;
-	transform: translateX(-50%);
-	z-index: 60;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  bottom: 75px;
+  height: 12px;
+  transform: translateX(-50%);
+  z-index: 60;
 }
 .main_slider_pagers {
-	display: inline-block;
-	height: 12px;
+  display: inline-block;
+  height: 12px;
 }
 .main_slider_pagers .bx-pager {
-	font-size: .85em;
-	font-weight: bold;
-	z-index: 50;
+  font-size: 0.85em;
+  font-weight: bold;
+  z-index: 50;
 }
 .main_slider_pagers .bx-pager-item {
-	display: inline-block;
-	font-size: .85em;
-	font-weight: bold;
-	bottom: 75px;
-	z-index: 50;
+  display: inline-block;
+  font-size: 0.85em;
+  font-weight: bold;
+  bottom: 75px;
+  z-index: 50;
 }
 .main_slider_pagers .bx-pager-item a {
-	display: block;
-	overflow: hidden;
-	text-indent: -9999px;
+  display: block;
+  overflow: hidden;
+  text-indent: -9999px;
 }
 .main_slider_pagers .bx-pager-item a.bx-pager-link {
-	background: #252323;
-	text-indent: -9999px;
-	display: block;
-	width: 10px;
-	height: 10px;
-	margin: 0 5px;
-	outline: 0;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
+  background: #252323;
+  text-indent: -9999px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  outline: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 .main_slider_pagers .bx-pager.bx-default-pager a:hover,
 .main_slider_pagers .bx-pager.bx-default-pager a.active,
 .main_slider_pagers .bx-pager.bx-default-pager a:focus {
-	background: #fff;
+  background: #fff;
 }
 .main_slider_controls {
-	width: 10px;
-	height: 11px;
-	float: right;
-	margin-left: 10px;
-	margin-top: -1px;
-	text-indent: -9999px;
+  width: 10px;
+  height: 11px;
+  float: right;
+  margin-left: 10px;
+  margin-top: -1px;
+  text-indent: -9999px;
 }
 .main_slider_controls .bx-controls-auto .bx-start {
-	display: block;
-	width: 10px;
-	height: 11px;
-	overflow: hidden;
-	background: url(../img/main_prom_play.png)no-repeat;
-	text-indent: -9999px;
+  display: block;
+  width: 10px;
+  height: 11px;
+  overflow: hidden;
+  background: url(../img/main_prom_play.png) no-repeat;
+  text-indent: -9999px;
 }
 .main_slider_controls .bx-controls-auto .bx-stop {
-	display: block;
-	width: 10px;
-	height: 11px;
-	overflow: hidden;
-	background: url(../img/main_prom_stop.png)no-repeat;
-	text-indent: -9999px;
+  display: block;
+  width: 10px;
+  height: 11px;
+  overflow: hidden;
+  background: url(../img/main_prom_stop.png) no-repeat;
+  text-indent: -9999px;
 }
-/*인디케이터 할때*/
 .img_wrap {
-	height: 550px;
-	background: url(../img/cjw-bg-main.jpg) no-repeat center;
-	background-size: cover;
-	padding-top: 172px;
-	text-align: center;
-	color: #fff;
+  height: 550px;
+  background: url(../img/cjw-bg-main.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 172px;
+  text-align: center;
+  color: #fff;
 }
-/*화면 전체 꽉찬 이미지 - cover*/
 .img_wrap.v2 {
-	background-image: url(../img/cjw-bg-friends.jpg);
+  background-image: url(../img/cjw-bg-friends.jpg);
 }
 .img_wrap.v3 {
-	background-image: url(../img/cjw-bg-foodCast.jpg);
+  background-image: url(../img/cjw-bg-foodCast.jpg);
 }
 .img_wrap > span {
-	font-family: "nbg", "돋움", dotum, sans-serif;
-	font-size: 1.8rem;
+  font-family: "nbg", "돋움", dotum, sans-serif;
+  font-size: 1.8rem;
 }
 .img_wrap > span b {
-	color: #81ebff;
+  color: #81ebff;
 }
 .img_wrap > span i {
-	color: #fff857;
+  color: #fff857;
 }
 .img_wrap h2 {
-	font-family: "nbg", "돋움", dotum, sans-serif;
-	font-size: 4.3rem;
-	font-weight: normal;
-	margin-top: 14px;
-	margin-bottom: 17px;
+  font-family: "nbg", "돋움", dotum, sans-serif;
+  font-size: 4.3rem;
+  font-weight: normal;
+  margin-top: 14px;
+  margin-bottom: 17px;
 }
-/*한줄은 line-height 필요없음*/
-/* margin-bottom : line-height 때문 - 빼기 2px */
 .img_wrap p {
-	width: 82.933%;
-	/*622 / 750 */
-	font-size: 1.4rem;
-	line-height: 1.286;
-	/* 36 / 28*/
-	margin: 0 auto 31px;
+  width: 82.933%;
+  font-size: 1.4rem;
+  line-height: 1.286;
+  margin: 0 auto 31px;
 }
 .img_wrap p span {
-	display: block;
+  display: block;
 }
 .img_wrap a {
-	display: inline-block;
-	background-color: rgba(0, 0, 0, .4);
-	width: 82.933%;
-	height: 50px;
-	border-radius: 3px;
-	line-height: 46px;
-	/*border값 4px 뺌*/
-	color: #fff;
-	border: 2px solid rgba(255, 255, 255, .6);
-	font-size: 1.5rem;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 82.933%;
+  height: 50px;
+  border-radius: 3px;
+  line-height: 46px;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  font-size: 1.5rem;
 }
 /*section*/
 .section {
-	height: 50px;
-	background-color: #fff;
-	border-bottom: 1px solid #959595;
+  height: 50px;
+  background-color: #fff;
+  border-bottom: 1px solid #959595;
 }
 .section ul li {
-	float: left;
-	width: 25%;
+  float: left;
+  width: 25%;
 }
 .section ul li a {
-	display: block;
-	line-height: 50px;
-	text-align: center;
-	font-size: 1.3rem;
-	color: #959595;
+  display: block;
+  line-height: 50px;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #959595;
 }
 .section ul li a:hover {
-	color: #000;
+  color: #000;
 }
 /*main*/
 /*story - smart fresh classic*/
 
 #story {
-    position: relative;
-	background-color: #f8f8f8;
-	padding: 27px 0px 80px;
+  position: relative;
+  background-color: #f8f8f8;
+  padding: 27px 0px 80px;
 }
 .story_inner article {
-	width: 82.933%;
-	/* 622/750 */
-	height: 328px;
-	margin: 0 auto;
-	border: 3px solid #f47933;
-	background: url(../img/cjw-bg-smart.jpg) no-repeat #fff right bottom;
-	border-radius: 2px;
-	/*border-radius: 4px 나누기*/
-	padding: 23px 14px;
-	background-size: 276px;
-	/*551*/
+  width: 82.933%;
+  height: 328px;
+  margin: 0 auto;
+  border: 3px solid #f47933;
+  background: url(../img/cjw-bg-smart.jpg) no-repeat #fff right bottom;
+  border-radius: 2px;
+  padding: 23px 14px;
+  background-size: 276px;
 }
 .story_inner article:first-child ~ article {
-	display: none;
+  display: none;
 }
 .story_inner .fresh {
-	border-color: #01b5d6;
-	padding-top: 22px;
-	background-image: url(../img/cjw-bg-fresh.jpg);
-	background-size: 275px;
-	/*550*/
+  border-color: #01b5d6;
+  padding-top: 22px;
+  background-image: url(../img/cjw-bg-fresh.jpg);
+  background-size: 275px;
 }
 .story_inner .classic {
-	border-color: #ef4665;
-	background-image: url(../img/cjw-bg-classic.jpg);
-	background-size: 250px;
+  border-color: #ef4665;
+  background-image: url(../img/cjw-bg-classic.jpg);
+  background-size: 250px;
 }
 .story_inner article > h3 {
-	width: 72px;
-	height: 25px;
-	background: url(../img/cjw-logo-smart.png) no-repeat;
-	background-size: 100%;
-	text-indent: -9999px;
-	overflow: hidden;
-	margin-bottom: 8px;
-	/*line-height 빼기*/
+  width: 72px;
+  height: 25px;
+  background: url(../img/cjw-logo-smart.png) no-repeat;
+  background-size: 100%;
+  text-indent: -9999px;
+  overflow: hidden;
+  margin-bottom: 8px;
 }
-/*auto 100% - height 기준, 100% - width 기준 / contain- 이미지 잘리지 않으려고 height를 기준으로*/
 
 .story_inner .fresh h3 {
-	height: 27px;
-	/*44px*/
-	background-image: url(../img/cjw-logo-fresh.png);
-	margin-bottom: 7px;
+  height: 27px;
+  background-image: url(../img/cjw-logo-fresh.png);
+  margin-bottom: 7px;
 }
 .story_inner .classic h3 {
-	background-image: url(../img/cjw-logo-classic.png);
+  background-image: url(../img/cjw-logo-classic.png);
 }
 .story_inner article strong {
-	font-size: 2rem;
-	color: #343434;
-	line-height: 1.25;
-	/* 50 / 40 */
+  font-size: 2rem;
+  color: #343434;
+  line-height: 1.25;
 }
 .story_inner article strong span {
-	display: block;
+  display: block;
 }
 .story_inner article p {
-	font-size: 1.3rem;
-	color: #343434;
-	line-height: 1.154;
-	/* 30 / 26 */
-	margin: 7px 0 13px;
-	/*line-height 빼기*/
+  font-size: 1.3rem;
+  color: #343434;
+  line-height: 1.154;
+  margin: 7px 0 13px;
 }
 .story_inner article a {
-	display: block;
-	width: 150px;
-	height: 35px;
-	line-height: 31px;
-	/*border값 4 빼기*/
-	border: 2px solid #cfcfcf;
-	font-size: 1.1rem;
-	color: #334343;
-	text-align: center;
+  display: block;
+  width: 150px;
+  height: 35px;
+  line-height: 31px;
+  border: 2px solid #cfcfcf;
+  font-size: 1.1rem;
+  color: #334343;
+  text-align: center;
 }
 .story_inner article a:after {
-	content: '';
-	width: 8px;
-	height: 8px;
-	display: inline-block;
-	background: url(../img/cjw-plus-story-orange.png) no-repeat;
-	background-size: contain;
-	margin-left: 15px;
+  content: "";
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background: url(../img/cjw-plus-story-orange.png) no-repeat;
+  background-size: contain;
+  margin-left: 15px;
 }
 
 .story_inner .fresh a:after {
-	background-image: url(../img/cjw-plus-story-blue.png);
+  background-image: url(../img/cjw-plus-story-blue.png);
 }
 
 .story_inner .classic a:after {
-	background-image: url(../img/cjw-plus-story-red.png);
+  background-image: url(../img/cjw-plus-story-red.png);
 }
 .story_slider_controller {
-	display: inline-block;
-	position: absolute;
-	left: 50%;
-	bottom: 35px;
-	height: 12px;
-	transform: translateX(-50%);
-	z-index: 60;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  bottom: 35px;
+  height: 12px;
+  transform: translateX(-50%);
+  z-index: 60;
 }
 .story_slider_pagers {
-	float: left;
-	height: 12px;
+  float: left;
+  height: 12px;
 }
 .story_slider_pagers .bx-pager {
-	font-size: .85em;
-	font-weight: bold;
-	z-index: 50;
+  font-size: 0.85em;
+  font-weight: bold;
+  z-index: 50;
 }
 .story_slider_pagers .bx-pager-item {
-	display: inline-block;
-	font-size: .85em;
-	font-weight: bold;
-	bottom: 75px;
-	z-index: 50;
+  display: inline-block;
+  font-size: 0.85em;
+  font-weight: bold;
+  bottom: 75px;
+  z-index: 50;
 }
 .story_slider_pagers .bx-pager-item a {
-	display: block;
-	overflow: hidden;
-	text-indent: -9999px;
+  display: block;
+  overflow: hidden;
+  text-indent: -9999px;
 }
 .story_slider_pagers .bx-pager-item a.bx-pager-link {
-	display: block;
-	width: 10px;
-	height: 10px;
-	margin: 0 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	border: 2px solid #7f7f7f;
-	background: transparent;
-	text-indent: -9999px;
-	outline: 0;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 2px solid #7f7f7f;
+  background: transparent;
+  text-indent: -9999px;
+  outline: 0;
 }
 .story_slider_pagers .bx-pager.bx-default-pager a:hover,
 .story_slider_pagers .bx-pager.bx-default-pager a.active,
 .story_slider_pagers .bx-pager.bx-default-pager a:focus {
-	background: #7f7f7f;
+  background: #7f7f7f;
 }
 .story_slider_controls {
-	width: 10px;
-	height: 11px;
-	float: right;
-	margin-left: 10px;
-	margin-top: -1px;
-	text-indent: -9999px;
+  width: 10px;
+  height: 11px;
+  float: right;
+  margin-left: 10px;
+  margin-top: -1px;
+  text-indent: -9999px;
 }
 .story_slider_controls .bx-controls-auto .bx-start {
-	display: block;
-	width: 10px;
-	height: 11px;
-	overflow: hidden;
-	background: url(../img/main_prom_play.png)no-repeat;
-	text-indent: -9999px;
+  display: block;
+  width: 10px;
+  height: 11px;
+  overflow: hidden;
+  background: url(../img/main_prom_play.png) no-repeat;
+  text-indent: -9999px;
 }
 .story_slider_controls .bx-controls-auto .bx-stop {
-	display: block;
-	width: 10px;
-	height: 11px;
-	overflow: hidden;
-	background: url(../img/main_prom_stop.png)no-repeat;
-	text-indent: -9999px;
+  display: block;
+  width: 10px;
+  height: 11px;
+  overflow: hidden;
+  background: url(../img/main_prom_stop.png) no-repeat;
+  text-indent: -9999px;
 }
 .img_wrap {
-	height: 550px;
-	background: url(../img/cjw-bg-main.jpg) no-repeat center;
-	background-size: cover;
-	padding-top: 172px;
-	text-align: center;
-	color: #fff;
+  height: 550px;
+  background: url(../img/cjw-bg-main.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 172px;
+  text-align: center;
+  color: #fff;
 }
 
 /*cast*/
 #cast {
-	background-color: #f8f8f8;
-	padding-bottom: 30px;
+  background-color: #f8f8f8;
+  padding-bottom: 30px;
 }
 .cast_inner .title {
-	height: 147px;
-	background: url(../img/cjw-bg-foodCast.jpg) no-repeat center;
-	background-size: cover;
-	text-align: center;
-	padding: 38px 0 26px;
-	margin-bottom: 19px;
+  height: 147px;
+  background: url(../img/cjw-bg-foodCast.jpg) no-repeat center;
+  background-size: cover;
+  text-align: center;
+  padding: 38px 0 26px;
+  margin-bottom: 19px;
 }
-/*margin-top 보다는 margin-bottom 주기*/
 .cast_inner .title h2 {
-	color: #fff;
-	font-family: "nbg", "돋움", dotum, sans-serif;
-	font-size: 3.3rem;
-	font-weight: normal;
-	margin-bottom: 12px;
+  color: #fff;
+  font-family: "nbg", "돋움", dotum, sans-serif;
+  font-size: 3.3rem;
+  font-weight: normal;
+  margin-bottom: 12px;
 }
-/*text - padding 잴때 1px 여백 감안해서 재기*/
 .cast_inner .title a {
-	color: #fff;
-	display: inline-block;
-	width: 230px;
-	height: 40px;
-	line-height: 36px;
-	border: 2px solid rgba(255, 255, 255, 0.6);
-	margin: 0 auto;
-	background-color: rgba(0, 0, 0, .4);
-	border-radius: 2px;
-	font-size: 1.3rem;
+  color: #fff;
+  display: inline-block;
+  width: 230px;
+  height: 40px;
+  line-height: 36px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  font-size: 1.3rem;
 }
 .cast_inner .title a:after {
-	content: '';
-	display: inline-block;
-	width: 10px;
-	height: 10px;
-	background: url(../img/cjw-plus-section-blue.png) no-repeat;
-	background-size: contain;
-	margin-left: 11px;
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url(../img/cjw-plus-section-blue.png) no-repeat;
+  background-size: contain;
+  margin-left: 11px;
 }
 .cast_inner .section_slider {
-	width: 82.933%;
-	/*622 / 750*/
-	margin: 0 auto 25px;
-	padding: 2px;
-	background-color: #fff;
-	border: 1px solid rgba(149, 149, 149, .6);
+  width: 82.933%;
+  margin: 0 auto 25px;
+  padding: 2px;
+  background-color: #fff;
+  border: 1px solid rgba(149, 149, 149, 0.6);
 }
-/*border- strok 확인(투명도)*/
 .cast_inner .section_slider div > span {
-	display: block;
-	height: 199px;
-	background: url(../img/cjw-img-foodCast.jpg) no-repeat center;
-	background-size: cover;
+  display: block;
+  height: 199px;
+  background: url(../img/cjw-img-foodCast.jpg) no-repeat center;
+  background-size: cover;
 }
 .cast_inner .section_slider a {
-	display: block;
-	text-align: center;
-	padding: 0 17px;
+  display: block;
+  text-align: center;
+  padding: 0 17px;
 }
 .cast_inner .section_slider a h3,
 .cast_inner .section_slider a p,
 .cast_inner .section_slider a span {
-	display: none;
+  display: none;
 }
 .cast_inner .section_slider a strong {
-	height: 42px;
-	line-height: 52px;
-	font-size: 1.3rem;
-	color: #626262;
+  height: 42px;
+  line-height: 52px;
+  font-size: 1.3rem;
+  color: #626262;
 }
-
-/*padding:2px*/
 .cast_inner .banner {
-	display: block;
-	width: 82.933%;
-	position: relative;
-	background: url(../img/cjw-icon-foodLab.png) no-repeat #02b5d6 14px center;
-	background-size: 59px;
-	/*height 기준일때 auto 59px;*/
-	margin: 0 auto 11px;
-	border-radius: 3px;
-	padding: 25px 51px 23px 99px;
+  display: block;
+  width: 82.933%;
+  position: relative;
+  background: url(../img/cjw-icon-foodLab.png) no-repeat #02b5d6 14px center;
+  background-size: 59px;
+  margin: 0 auto 11px;
+  border-radius: 3px;
+  padding: 25px 51px 23px 99px;
 }
-/*line-height 빼주기 주의, 화살표 absolute로 띄울꺼라서 상관안하기*/
 .cast_inner .banner:after {
-	content: "";
-	width: 16px;
-	height: 29px;
-	position: absolute;
-	right: 12px;
-	top: 50%;
-	margin-top: -15px;
-	background: url(../img/cjw-arrow-section-right.png) no-repeat;
-	background-size: contain;
+  content: "";
+  width: 16px;
+  height: 29px;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  margin-top: -15px;
+  background: url(../img/cjw-arrow-section-right.png) no-repeat;
+  background-size: contain;
 }
 .cast_inner .banner:nth-of-type(2) {
-	margin-bottom: 0;
-	background-image: url(../img/cjw-icon-bottleRecipe.png);
-	background-color: #76d9c5;
+  margin-bottom: 0;
+  background-image: url(../img/cjw-icon-bottleRecipe.png);
+  background-color: #76d9c5;
 }
 .cast_inner .banner h3 {
-	font-size: 2rem;
-	font-weight: normal;
-	color: #000;
-	margin-bottom: 9px;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #000;
+  margin-bottom: 9px;
 }
 .cast_inner .banner p {
-	display: inline-block;
-	font-size: 1.1rem;
-	line-height: 1.182;
-	/*26/22*/
-	color: #000;
+  display: inline-block;
+  font-size: 1.1rem;
+  line-height: 1.182;
+  color: #000;
 }
 
 /*knowhow*/
 
 #knowhow {
-	padding-bottom: 36px;
-	background-color: #f8f8f8;
+  padding-bottom: 36px;
+  background-color: #f8f8f8;
 }
 .knowhow_inner .title {
-	height: 147px;
-	padding-top: 37px;
-	margin-bottom: 19px;
-	background: url(../img/cjw-bg-foodKnowhow-mobile.jpg) no-repeat;
-	background-size: cover;
-	text-align: center;
+  height: 147px;
+  padding-top: 37px;
+  margin-bottom: 19px;
+  background: url(../img/cjw-bg-foodKnowhow-mobile.jpg) no-repeat;
+  background-size: cover;
+  text-align: center;
 }
 .knowhow_inner h2 {
-	color: #fff;
-	font-size: 3.3rem;
-	font-family: "nbg", "돋움", dotum, sans-serif;
-	font-weight: normal;
-	margin-bottom: 15px;
+  color: #fff;
+  font-size: 3.3rem;
+  font-family: "nbg", "돋움", dotum, sans-serif;
+  font-weight: normal;
+  margin-bottom: 15px;
 }
 .knowhow_inner .title a {
-	width: 230px;
-	height: 40px;
-	display: inline-block;
-	line-height: 36px;
-	color: #fff;
-	background-color: rgba(0, 0, 0, .4);
-	border: 2px solid rgba(255, 255, 255, .6);
-	border-radius: 2px;
-	font-size: 1.3rem;
+  width: 230px;
+  height: 40px;
+  display: inline-block;
+  line-height: 36px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 2px;
+  font-size: 1.3rem;
 }
-/*display:block 을 사용할 경우 margin:0 auto 같이 넣기, inline-block 이면 필요없음*/
 .knowhow_inner .title a:after {
-	content: '';
-	display: inline-block;
-	width: 10px;
-	height: 10px;
-	background: url(../img/cjw-plus-section-yellow.png) no-repeat;
-	background-size: contain;
-	margin-left: 11px;
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url(../img/cjw-plus-section-yellow.png) no-repeat;
+  background-size: contain;
+  margin-left: 11px;
 }
 .knowhow_inner .section_slider {
-	width: 82.933%;
-	padding: 2px;
-	border: 1px solid rgba(149, 149, 149, .6);
-	border-radius: 3px;
-	background-color: #fff;
-	margin: 0 auto 25px;
+  width: 82.933%;
+  padding: 2px;
+  border: 1px solid rgba(149, 149, 149, 0.6);
+  border-radius: 3px;
+  background-color: #fff;
+  margin: 0 auto 25px;
 }
 .knowhow_inner .section_slider div > span {
-	display: block;
-	height: 199px;
-	background: url(../img/cjw-img-specialRecipe.jpg) no-repeat center;
-	background-size: cover;
+  display: block;
+  height: 199px;
+  background: url(../img/cjw-img-specialRecipe.jpg) no-repeat center;
+  background-size: cover;
 }
 .knowhow_inner .section_slider div a {
-	display: block;
-	padding: 14px 30px 16px;
-	text-align: center;
+  display: block;
+  padding: 14px 30px 16px;
+  text-align: center;
 }
 .knowhow_inner .section_slider div a strong {
-	text-align: center;
-	line-height: 1.154;
-	font-size: 1.3rem;
-	font-weight: normal;
-	color: #626262;
+  text-align: center;
+  line-height: 1.154;
+  font-size: 1.3rem;
+  font-weight: normal;
+  color: #626262;
 }
 .knowhow_inner .banner {
-	display: block;
-	width: 82.933%;
-	position: relative;
-	background: url(../img/cjw-icon-cjwRecipe.png) no-repeat 14px center;
-	background-size: 58px;
-	background-color: #76d9c5;
-	margin: 0 auto 10px;
-	padding: 25px 51px 23px 99px;
-	border-radius: 3px;
-	color: #000;
+  display: block;
+  width: 82.933%;
+  position: relative;
+  background: url(../img/cjw-icon-cjwRecipe.png) no-repeat 14px center;
+  background-size: 58px;
+  background-color: #76d9c5;
+  margin: 0 auto 10px;
+  padding: 25px 51px 23px 99px;
+  border-radius: 3px;
+  color: #000;
 }
 .knowhow_inner .bannerWrap .banner {
-	background-image: url(../img/cjw-icon-eShop.png);
-	margin-bottom: 0;
-	padding: 25px 51px 23px 99px;
-	background-color: #f4cb4d;
+  background-image: url(../img/cjw-icon-eShop.png);
+  margin-bottom: 0;
+  padding: 25px 51px 23px 99px;
+  background-color: #f4cb4d;
 }
 .knowhow_inner .banner h3 {
-	font-size: 2rem;
-	font-weight: normal;
-	margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 10px;
 }
 .knowhow_inner .banner p {
-	font-size: 1.1rem;
-	line-height: 1.182;
+  font-size: 1.1rem;
+  line-height: 1.182;
 }
 .knowhow_inner .banner:after {
-	content: "";
-	width: 16px;
-	height: 29px;
-	display: block;
-	position: absolute;
-	right: 12px;
-	bottom: 50%;
-	margin-bottom: -15px;
-	background: url(../img/cjw-arrow-section-right.png) no-repeat;
-	background-size: contain;
+  content: "";
+  width: 16px;
+  height: 29px;
+  display: block;
+  position: absolute;
+  right: 12px;
+  bottom: 50%;
+  margin-bottom: -15px;
+  background: url(../img/cjw-arrow-section-right.png) no-repeat;
+  background-size: contain;
 }
 
 /*freinds*/
 
 #friends {
-	padding-bottom: 31px;
-	background-color: #f8f8f8;
+  padding-bottom: 31px;
+  background-color: #f8f8f8;
 }
 .friends_inner .title {
-	height: 147px;
-	padding-top: 37px;
-	margin-bottom: 19px;
-	background: url(../img/cjw-bg-friends.jpg) no-repeat center;
-	background-size: cover;
-	text-align: center;
+  height: 147px;
+  padding-top: 37px;
+  margin-bottom: 19px;
+  background: url(../img/cjw-bg-friends.jpg) no-repeat center;
+  background-size: cover;
+  text-align: center;
 }
 .friends_inner .title h3 {
-	margin-bottom: 14px;
-	color: #fff;
-	font-size: 3.3rem;
-	font-weight: normal;
+  margin-bottom: 14px;
+  color: #fff;
+  font-size: 3.3rem;
+  font-weight: normal;
 }
 .friends_inner .title a.pc {
-	display: none;
+  display: none;
 }
 .friends_inner .title a {
-	display: inline-block;
-	width: 230px;
-	height: 40px;
-	border: 2px solid rgba(255, 255, 255, .6);
-	background-color: rgba(0, 0, 0, .4);
-	color: #fff;
-	font-size: 1.3rem;
-	line-height: 38px;
+  display: inline-block;
+  width: 230px;
+  height: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 38px;
 }
 .friends_inner .title a:after {
-	content: '';
-	display: inline-block;
-	width: 10px;
-	height: 10px;
-	margin-left: 11px;
-	background: url(../img/cjw-plus-section-green.png) no-repeat;
-	background-size: contain;
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 11px;
+  background: url(../img/cjw-plus-section-green.png) no-repeat;
+  background-size: contain;
 }
 .friends_inner .banner {
-	display: block;
-	position: relative;
-	width: 82.933%;
-	margin: 0 auto 10px;
+  display: block;
+  position: relative;
+  width: 82.933%;
+  margin: 0 auto 10px;
 }
 .friends_inner .friends_b {
-	overflow: hidden;
-	padding: 25px 11px;
-	color: #000;
-	background-color: #f4cb4d;
+  overflow: hidden;
+  padding: 25px 11px;
+  color: #000;
+  background-color: #f4cb4d;
 }
 .friends_inner .friends_b .bg {
-	position: absolute;
-	right: -32px;
-	bottom: 0;
-	width: 139px;
-	height: 139px;
-	background: url(../img/cjw-icon-foodBox.png) no-repeat;
-	background-size: contain;
+  position: absolute;
+  right: -32px;
+  bottom: 0;
+  width: 139px;
+  height: 139px;
+  background: url(../img/cjw-icon-foodBox.png) no-repeat;
+  background-size: contain;
 }
 .friends_inner .friends_b strong {
-	font-size: 1.8rem;
-	line-height: 1.111;
-	font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 1.111;
+  font-weight: normal;
 }
 .friends_inner .friends_b .line {
-	display: block;
-	width: 67.524%;
-	height: 2px;
-	margin: 15px 0;
-	background: rgba(255, 255, 255, .5);
+  display: block;
+  width: 67.524%;
+  height: 2px;
+  margin: 15px 0;
+  background: rgba(255, 255, 255, 0.5);
 }
 .friends_inner .friends_b p {
-	margin-bottom: 22px;
-	font-size: 1.1rem;
-	line-height: 1.182;
+  margin-bottom: 22px;
+  font-size: 1.1rem;
+  line-height: 1.182;
 }
 .friends_inner .friends_b span:last-child {
-	display: block;
-	width: 145px;
-	height: 35px;
-	border: 2px solid rgba(255, 255, 255, .5);
-	font-size: 1.3rem;
-	line-height: 33px;
-	text-align: center;
+  display: block;
+  width: 145px;
+  height: 35px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  font-size: 1.3rem;
+  line-height: 33px;
+  text-align: center;
 }
 .friends_inner .banner:nth-of-type(2) {
-	padding: 25px 51px 24px 99px;
-	border-radius: 3px;
-	background: url(../img/cjw-icon-friendsPanel.png) no-repeat 14px center;
-	background-color: #02b5d6;
-	background-size: 59px;
-	color: #fff;
+  padding: 25px 51px 24px 99px;
+  border-radius: 3px;
+  background: url(../img/cjw-icon-friendsPanel.png) no-repeat 14px center;
+  background-color: #02b5d6;
+  background-size: 59px;
+  color: #fff;
 }
 .friends_inner .banner:nth-of-type(2) h4 {
-	margin-bottom: 10px;
-	font-size: 1rem;
-	font-weight: normal;
-	color: #fff;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #fff;
 }
 .friends_inner .banner:nth-of-type(2) p {
-	font-size: 1.2rem;
-	line-height: 1.083;
+  font-size: 1.2rem;
+  line-height: 1.083;
 }
 .friends_inner .banner:nth-of-type(2):after {
-	content: '';
-	display: inline-block;
-	position: absolute;
-	top: 50%;
-	right: 16px;
-	width: 16px;
-	height: 29px;
-	margin-top: -15px;
-	background: url(../img/cjw-arrow-section-right.png) no-repeat center;
-	background-size: contain;
-	text-indent: -9999px;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  width: 16px;
+  height: 29px;
+  margin-top: -15px;
+  background: url(../img/cjw-arrow-section-right.png) no-repeat center;
+  background-size: contain;
+  text-indent: -9999px;
 }
 .friends_inner .box {
-	width: 82.933%;
-	margin: 0 auto;
+  width: 82.933%;
+  margin: 0 auto;
 }
 .friends_inner .bannerBox {
-	float: left;
-	width: 50%;
-	height: 113px;
-	padding-top: 13px;
-	background-color: #fff;
-	text-align: center;
-	border: 1px solid #cfcfcf;
+  float: left;
+  width: 50%;
+  height: 113px;
+  padding-top: 13px;
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid #cfcfcf;
 }
 .friends_inner .bannerBox:last-child {
-	border-left: none;
+  border-left: none;
 }
 .friends_inner .bannerBox h4 {
-	padding-top: 70px;
-	background: url(../img/cjw-icon-foodEditor.png) no-repeat top center;
-	background-size: 62px;
-	color: #000;
-	font-size: 1.2rem;
-	font-weight: normal;
+  padding-top: 70px;
+  background: url(../img/cjw-icon-foodEditor.png) no-repeat top center;
+  background-size: 62px;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: normal;
 }
 .friends_inner .bannerBox:last-child h4 {
-	background-image: url(../img/cjw-icon-meetingTalk.png);
-	background-position: center 5px;
-	background-size: 53px;
+  background-image: url(../img/cjw-icon-meetingTalk.png);
+  background-position: center 5px;
+  background-size: 53px;
 }
 
 /*sns*/
 
 #sns {
-	padding: 35px 0 33px;
+  padding: 35px 0 33px;
 }
 .sns_inner .title {
-	text-align: center;
-	margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .sns_inner .title h2 {
-	font-family: "nbg", "돋움", dotum, sans-serif;
-	font-weight: normal;
-	font-size: 3.3rem;
-	color: #000;
-	margin-bottom: 13px;
+  font-family: "nbg", "돋움", dotum, sans-serif;
+  font-weight: normal;
+  font-size: 3.3rem;
+  color: #000;
+  margin-bottom: 13px;
 }
 .sns_inner .title p {
-	font-size: 1.4rem;
-	color: #4b4b4b;
+  font-size: 1.4rem;
+  color: #4b4b4b;
 }
 .sns_inner .sns_link {
-	width: 82.933%;
-	margin: 0 auto 31px;
+  width: 82.933%;
+  margin: 0 auto 31px;
 }
 .sns_inner .sns_link ul li {
-	float: left;
-	/*width:16.667%; text-align:center;*/
-	width: calc((100% - 35px)/5);
+  float: left;
+  width: calc((100% - 35px) / 5);
 }
 .sns_inner .sns_link ul li:last-child {
-	width: 35px;
+  width: 35px;
 }
 .sns_inner .sns_link ul li a {
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	background: url(../img/cjw-sns-facebook.png) no-repeat;
-	background-size: contain;
-	text-indent: -9999px;
-	overflow: hidden;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: url(../img/cjw-sns-facebook.png) no-repeat;
+  background-size: contain;
+  text-indent: -9999px;
+  overflow: hidden;
 }
 .sns_inner .sns_link ul li:nth-child(2) a {
-	background-image: url(../img/cjw-sns-kakao.png);
+  background-image: url(../img/cjw-sns-kakao.png);
 }
 .sns_inner .sns_link ul li:nth-child(3) a {
-	background-image: url(../img/cjw-sns-blog.png);
+  background-image: url(../img/cjw-sns-blog.png);
 }
 .sns_inner .sns_link ul li:nth-child(4) a {
-	background-image: url(../img/cjw-sns-twitter.png);
+  background-image: url(../img/cjw-sns-twitter.png);
 }
 .sns_inner .sns_link ul li:nth-child(5) a {
-	background-image: url(../img/cjw-sns-instagram.png);
+  background-image: url(../img/cjw-sns-instagram.png);
 }
 .sns_inner .sns_link ul li:nth-child(6) a {
-	background-image: url(../img/cjw-sns-youtube.png);
+  background-image: url(../img/cjw-sns-youtube.png);
 }
 .sns_inner .sns_con {
-	width: 82.933%;
-	margin: 0 auto;
+  width: 82.933%;
+  margin: 0 auto;
 }
 .sns_inner .sns_con a {
-	display: block;
-	height: 160px;
-	border: 2px solid #f8f7f7;
+  display: block;
+  height: 160px;
+  border: 2px solid #f8f7f7;
 }
 .sns_inner .sns_con a span {
-	float: left;
-	width: 50%;
-	height: 100%;
-	background: url(../img/cjw-img-snsNaver.jpg) no-repeat center;
-	background-size: cover;
-	border-right: 2px solid #f8f7f7;
+  float: left;
+  width: 50%;
+  height: 100%;
+  background: url(../img/cjw-img-snsNaver.jpg) no-repeat center;
+  background-size: cover;
+  border-right: 2px solid #f8f7f7;
 }
-/*height 원래 비율 안되는데 absolute 나 float가 적용되면 가능*/
+
 .sns_inner .sns_con a:last-child span {
-	border-right: none;
-	float: right;
-	background-image: url(../img/cjw-img-snsFacebook.jpg);
+  border-right: none;
+  float: right;
+  background-image: url(../img/cjw-img-snsFacebook.jpg);
 }
 .sns_inner .sns_con a .txt {
-	float: left;
-	width: 50%;
-	height: 100%;
-	position: relative;
-	border-left: 1px solid #f8f7f7;
-	padding: 18px 5px 0 10px;
+  float: left;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  border-left: 1px solid #f8f7f7;
+  padding: 18px 5px 0 10px;
 }
 .sns_inner .sns_con a:last-child .txt {
-	border-left: none;
-	border-right: 2px solid #f8f7f7;
+  border-left: none;
+  border-right: 2px solid #f8f7f7;
 }
 .sns_inner .sns_con .txt h3 {
-	height: 18px;
-	line-height: 18px;
-	font-size: 1.3rem;
-	color: #000;
-	font-weight: normal;
-	background: url(../img/cjw-sns-blog.png) no-repeat right center;
-	background-size: auto 100%;
+  height: 18px;
+  line-height: 18px;
+  font-size: 1.3rem;
+  color: #000;
+  font-weight: normal;
+  background: url(../img/cjw-sns-blog.png) no-repeat right center;
+  background-size: auto 100%;
 }
 .sns_inner .sns_con a:last-child .txt h3 {
-	background-image: url(../img/cjw-sns-facebook.png);
+  background-image: url(../img/cjw-sns-facebook.png);
 }
 .sns_inner .sns_con .txt p {
-	position: absolute;
-	left: 10px;
-	bottom: 14px;
-	font-size: 1.3rem;
-	color: #494949;
-	line-height: 1.077;
+  position: absolute;
+  left: 10px;
+  bottom: 14px;
+  font-size: 1.3rem;
+  color: #494949;
+  line-height: 1.077;
 }
-/*bottom 을 잡았을때 끌려 올라간다면 - relative의 높이를 잡아줌*/
 
 /*footer*/
 #footer {
-	background-color: #fbfbfb;
-	border-top: 1px solid #cfcfcf;
+  background-color: #fbfbfb;
+  border-top: 1px solid #cfcfcf;
 }
 .link_wrap > a,
 .link_wrap ul.foot_btn li,
 .copy_wrap > span {
-	height: 50px;
-	line-height: 49px;
-	border-bottom: 1px solid #cfcfcf;
-	font-size: 1.2rem;
-	display: block;
+  height: 50px;
+  line-height: 49px;
+  border-bottom: 1px solid #cfcfcf;
+  font-size: 1.2rem;
+  display: block;
 }
-.link_wrap ul.foot_btn li.pc_only:last-child{
-	display: none;
+.link_wrap ul.foot_btn li.pc_only:last-child {
+  display: none;
 }
 .link_wrap ul.foot_btn li a,
 .copy_wrap > span a {
-	color: #767676;
+  color: #767676;
 }
 .link_wrap > a {
-	color: #02b5d6;
-	padding-left: 8.8%;
-	/*66 / 750*/
+  color: #02b5d6;
+  padding-left: 8.8%;
+  /*66 / 750*/
 }
 .link_wrap ul.foot_btn li {
-	float: left;
-	width: 50%;
+  float: left;
+  width: 50%;
 }
 .link_wrap ul.foot_btn li:nth-child(odd) {
-	border-right: 1px solid #cfcfcf;
+  border-right: 1px solid #cfcfcf;
 }
-/*odd - 홀수에만*/
 .link_wrap ul.foot_btn li a {
-	display: block;
-	padding-left: 17.6%;
-	/*66 / 375*/
+  display: block;
+  padding-left: 17.6%;
 }
 .copy_wrap > span a {
-	float: left;
-	width: 50%;
-	padding-left: 8.533%;
-	/* 64/ 750 */
-	font-size: 1rem;
+  float: left;
+  width: 50%;
+  padding-left: 8.533%;
+  font-size: 1rem;
 }
-/*a태그의 부모 span이 100%*/
 .copy_wrap > span a:first-child {
-	border-right: 1px solid #cfcfcf;
+  border-right: 1px solid #cfcfcf;
 }
 .copy_wrap > span a:before {
-	content: '';
-	width: 25px;
-	height: 49px;
-	display: inline-block;
-	background: url(../img/cjw-logo-ccm.png) no-repeat left center;
-	background-size: contain;
-	vertical-align: middle;
-	margin-right: 8px;
+  content: "";
+  width: 25px;
+  height: 49px;
+  display: inline-block;
+  background: url(../img/cjw-logo-ccm.png) no-repeat left center;
+  background-size: contain;
+  vertical-align: middle;
+  margin-right: 8px;
 }
-/* height:25px 로 잡고 해도 됨/ height 전체 높이 잡고 (49px) background-position:left center로 잡기*/
 .copy_wrap > span a:last-child {
-	padding-left: 6.8%;
+  padding-left: 6.8%;
 }
-/*51 / 750 */
 .copy_wrap > span a:last-child:before {
-	width: 18px;
-	background-image: url(../img/cjw-logo-wa.png);
-	margin-right: 7px;
+  width: 18px;
+  background-image: url(../img/cjw-logo-wa.png);
+  margin-right: 7px;
 }
 .copy_wrap .copy {
-	margin-top: 29px;
-	text-align: center;
+  margin-top: 29px;
+  text-align: center;
 }
 .copy_wrap .copy > span {
-	display: inline-block;
-	width: 40px;
-	margin-bottom: 22px;
+  display: inline-block;
+  width: 40px;
+  margin-bottom: 22px;
 }
 .copy_wrap .copy > span img {
-	width: 100%;
+  width: 100%;
 }
 .copy_wrap .copy p {
-	font-size: 0;
+  font-size: 0;
 }
-/*부모태그 font-size:0; 주면 기존 여백 사라짐 / 주의 - 자식에 font-size가 있어야함*/
 .copy_wrap .copy p > span {
-	color: #666;
-	font-size: 1.1rem;
-	line-height: 1.455;
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.455;
 }
-/*32/22*/
 .copy_wrap .copy p > span:last-child {
-	display: block;
+  display: block;
 }
-/*줄바꿈*/
 .copy_wrap .copy p > span a {
-	color: #666;
+  color: #666;
 }
 .copy_wrap .copy p > span:first-child:after {
-	content: '|';
-	margin: 0 11px;
-	color: #666;
+  content: "|";
+  margin: 0 11px;
+  color: #666;
 }
 .copy_wrap .copy p:last-child {
-	height: 45px;
-	line-height: 45px;
-	background-color: #666;
-	color: #fbfbfb;
-	font-size: 1rem;
-	margin-top: 24px;
+  height: 45px;
+  line-height: 45px;
+  background-color: #666;
+  color: #fbfbfb;
+  font-size: 1rem;
+  margin-top: 24px;
 }
 
-/*---------------------------------미디어쿼리-----------------------------------------------------------*/
+@media all and (min-width: 768px) {
+  /*header*/
+  #header {
+    height: 80px;
+  }
+  .logo {
+    width: 107px;
+    top: 26px;
+    margin-left: -54px;
+  }
+  .sch_form .sch_on {
+    width: 30px;
+    height: 30px;
+    left: 5.208%;
+    top: 30px;
+  }
+  .sch_wrap .sch_off {
+    font-size: 2.1rem;
+  }
+  .sch_wrap input {
+    width: 71.615%;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    margin: 22px 1.953% 0;
+    padding-left: 22px;
+    font-size: 2.1rem;
+  }
+  .sch_wrap .btn_sch {
+    width: 70px;
+    height: 40px;
+    background-size: 20px;
+    border-radius: 5px;
+    vertical-align: 2px;
+  }
+  .btn_nav {
+    width: 42px;
+    height: 26px;
+    right: 5.078%;
+    top: 32px;
+  }
+  .btn_nav span {
+    height: 6px;
+    border-radius: 6px;
+  }
+  .btn_nav span:nth-child(2) {
+    margin: 4px 0;
+  }
+  #navWrap {
+    display: none;
+    right: -300px;
+  }
+  .nav_inner {
+    width: 66.146%;
+    padding-top: 29px;
+  }
+  .nav_inner > div {
+    margin-bottom: 16px;
+  }
+  .nav_inner > div a:nth-child(1) {
+    width: 100px;
+    height: 35px;
+  }
+  .nav_inner > div a:nth-child(2) {
+    font-size: 2.1rem;
+    line-height: 35px;
+  }
+  .nav_inner > a {
+    height: 100px;
+    line-height: 98px;
+    font-size: 2.5rem;
+    padding-left: 10.63%;
+  }
+  .nav_inner > a:after {
+    width: 40px;
+    height: 40px;
+    right: 12.008%;
+  }
+  .nav_inner > a:last-child {
+    height: 100px;
+  }
+  .nav_inner > a:last-child:after {
+    right: 11.22%;
+  }
+  .nav_inner .gnb > li > a {
+    height: 91px;
+    line-height: 90px;
+    font-size: 2.5rem;
+  }
+  .nav_inner .gnb > li > a span {
+    width: 20px;
+    height: 10px;
+    margin-top: -5px;
+  }
+  .nav_inner .sub_wrap ul li a {
+    height: 69px;
+    line-height: 69px;
+    font-size: 2.1rem;
+  }
+  /*visual*/
+  #visual {
+    margin-top: 80px;
+  }
+  .slider {
+    height: 750px;
+  }
+  .img_wrap {
+    height: 750px;
+    padding-top: 180px;
+  }
+  .img_wrap > span {
+    font-size: 3.3rem;
+  }
+  .img_wrap h2 {
+    font-size: 7.5rem;
+    margin-top: 22px;
+    margin-bottom: 23px;
+  }
+  .img_wrap p {
+    width: 80.99%;
+    font-size: 2.4rem;
+    line-height: 1.208;
+    margin: 0 auto 33px;
+  }
+  .img_wrap p span {
+    display: block;
+  }
+  .img_wrap a {
+    width: 300px;
+    height: 70px;
+    line-height: 66px;
+    font-size: 2.1rem;
+  }
+  /*section*/
+  .section {
+    height: 70px;
+    text-align: center;
+  }
+  .section ul {
+    display: inline-block;
+  }
+  .section ul li {
+    width: auto;
+  }
+  .section ul li a {
+    display: inline-block;
+    line-height: 69px;
+    font-size: 2rem;
+    padding: 0 30px;
+  }
+  .section ul li:after {
+    content: "|";
+    font-size: 2rem;
+    color: #959595;
+  }
+  .section ul li:last-child:after {
+    display: none;
+  }
+  /*story*/
 
-@media all and (min-width:768px) {
+  #story {
+    padding: 36px 0 97px;
+  }
+  .story_inner {
+    width: 80.99%;
+    margin: 0 auto;
+  }
+  .story_inner article {
+    float: left;
+    width: 100%;
+    height: 375px;
+    border-width: 2px;
+    border-radius: 4px;
+    padding: 22px;
+    background-size: 274px;
+  }
+  .story_inner article:nth-child(2) {
+    margin-right: 0;
+  }
+  #story .story_inner article:nth-child(2) {
+    display: block;
+  }
+  .story_inner .fresh {
+    background-size: 293px;
+  }
+  .story_inner .classic {
+    padding-top: 22px;
+    background-size: 239px;
+  }
+  .story_inner article > h3 {
+    height: 29px;
+    margin-bottom: 13px;
+  }
+  .story_inner .fresh h3 {
+    height: 29px;
+    background-position: 0 2px;
+    margin-bottom: 13px;
+  }
+  .story_inner .classic h3 {
+    background-position: 0 3px;
+    margin-bottom: 13px;
+  }
+  .story_inner article p {
+    font-size: 1.7rem;
+    line-height: 1.118;
+    margin: 13px 0 0;
+  }
+  .story_inner .fresh p {
+    margin-bottom: 0;
+  }
+  .story_inner article a {
+    position: absolute;
+    left: auto;
+    top: 200px;
+    width: 188px;
+    height: 45px;
+    line-height: 41px;
+    font-size: 1.5rem;
+    background-color: #fff;
+  }
+  .story_inner article a:after {
+    width: 15px;
+    height: 15px;
+    margin-left: 18px;
+    vertical-align: -2px;
+    display: inline-block;
+  }
+  .story_slider_controller {
+    bottom: 50px;
+  }
+  /*cast*/
+  #cast {
+    padding-bottom: 106px;
+  }
+  .cast_inner .title {
+    height: 294px;
+    padding: 84px 0 58px;
+    margin-bottom: 38px;
+  }
 
-	/*header*/
-	#header {
-		height: 80px;
-	}
-	.logo {
-		width: 107px;
-		top: 26px;
-		margin-left: -54px;
-	}
-	.sch_form .sch_on {
-		width: 30px;
-		height: 30px;
-		left: 5.208%;
-		/* 40 / 768 */
-		top: 30px;
-	}
-	.sch_wrap .sch_off {
-		font-size: 2.1rem;
-	}
-	.sch_wrap input {
-		width: 71.615%;
-		/* 550 / 768 */
-		height: 40px;
-		line-height: 40px;
-		border-radius: 5px;
-		margin: 22px 1.953% 0;
-		/* 15 / 768 */
-		padding-left: 22px;
-		font-size: 2.1rem;
-	}
-	.sch_wrap .btn_sch {
-		width: 70px;
-		height: 40px;
-		background-size: 20px;
-		border-radius: 5px;
-		vertical-align: 2px;
-	}
-	/*vertical-align -> inlin 태그에서 가능*/
-	.btn_nav {
-		width: 42px;
-		height: 26px;
-		right: 5.078%;
-		/*39 / 768*/
-		top: 32px;
-	}
-	.btn_nav span {
-		height: 6px;
-		border-radius: 6px;
-	}
-	.btn_nav span:nth-child(2) {
-		margin: 4px 0;
-	}
-	#navWrap {
-		display: none;
-		right: -300px;
-	}
-	.nav_inner {
-		width: 66.146%;
-		/*508 / 768*/
-		padding-top: 29px;
-	}
-	.nav_inner > div {
-		margin-bottom: 16px;
-	}
-	.nav_inner > div a:nth-child(1) {
-		width: 100px;
-		height: 35px;
-	}
-	.nav_inner > div a:nth-child(2) {
-		font-size: 2.1rem;
-		line-height: 35px;
-	}
-	.nav_inner > a {
-		height: 100px;
-		line-height: 98px;
-		font-size: 2.5rem;
-		padding-left: 10.630%;
-	}
-	.nav_inner > a:after {
-		width: 40px;
-		height: 40px;
-		right: 12.008%;
-		/*61 / 508 */
-	}
-	.nav_inner > a:last-child {
-		height: 100px;
-	}
-	.nav_inner > a:last-child:after {
-		right: 11.220%;
-		/*57 / 508 */
-	}
-	.nav_inner .gnb > li > a {
-		height: 91px;
-		line-height: 90px;
-		font-size: 2.5rem;
-	}
-	.nav_inner .gnb > li > a span {
-		width: 20px;
-		height: 10px;
-		margin-top: -5px;
-	}
-	.nav_inner .sub_wrap ul li a {
-		height: 69px;
-		line-height: 69px;
-		font-size: 2.1rem;
-	}
-	/*visual*/
-	#visual {
-		margin-top: 80px;
-	}
-	/* #header - height:80px , fixed는 left top 줘야함(margin-top에 끌려감)*/
-	.slider {
-		height: 750px;
-	}
-	.img_wrap {
-		height: 750px;
-		padding-top: 180px;
-	}
-	.img_wrap > span {
-		font-size: 3.3rem;
-	}
-	.img_wrap h2 {
-		font-size: 7.5rem;
-		margin-top: 22px;
-		margin-bottom: 23px;
-		/*margin ->line-height 주의 - 캡쳐해서 비교해보기 */
-	}
-	.img_wrap p {
-		width: 80.99%;
-		/*622 / 768 */
-		font-size: 2.4rem;
-		line-height: 1.208;
-		/*29 / 24*/
-		margin: 0 auto 33px;
-	}
-	/*line-height 재는법- 글씨 포함한 밑 공백을 잰 값*/
-	.img_wrap p span {
-		display: block;
-	}
-	.img_wrap a {
-		width: 300px;
-		height: 70px;
-		line-height: 66px;
-		/*border 값 4px 빼기*/
-		font-size: 2.1rem;
-	}
-	/*section*/
-	.section {
-		height: 70px;
-		text-align: center;
-	}
-	/*text 가운데 정렬 -> text-align:center */
-	.section ul {
-		display: inline-block;
-	}
-	/*text 가운데 정렬 -> 부모 태그에 inline-block */
-	.section ul li {
-		width: auto;
-	}
-	/*text 가운데 정렬 -> width값 없어야 함, 부모의 크기 상속은 auto*/
-	.section ul li a {
-		display: inline-block;
-		line-height: 69px;
-		/*border 1px */
-		font-size: 2rem;
-		padding: 0 30px;
-	}
-	.section ul li:after {
-		content: '|';
-		font-size: 2rem;
-		color: #959595;
-	}
-	.section ul li:last-child:after {
-		display: none;
-	}
-	/*story*/
+  .cast_inner .title h2 {
+    font-size: 5.8rem;
+    margin-bottom: 30px;
+  }
+  .cast_inner .title a {
+    width: 350px;
+    height: 70px;
+    line-height: 66px;
+    font-size: 2.1rem;
+  }
+  .cast_inner .title a:after {
+    width: 19px;
+    height: 20px;
+    margin-left: 36px;
+    vertical-align: -2px;
+  }
+  .cast_inner .section_slider {
+    width: 84.375%;
+    margin-bottom: 122px;
+    padding: 3px;
+    border-radius: 5px;
+    border-width: 2px;
+  }
+  .cast_inner .section_slider div > span {
+    height: 397px;
+  }
+  .cast_inner .section_slider a {
+    padding: 0 34px;
+  }
+  .cast_inner .section_slider a strong {
+    height: 83px;
+    line-height: 83px;
+    font-size: 2.4rem;
+  }
+  .cast_inner .banner {
+    width: 84.375%;
+    background-position: 28px center;
+    background-size: 100px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 55px 105px 44px 158px;
+  }
+  .cast_inner .banner h3 {
+    font-size: 3.3rem;
+    margin-bottom: 18px;
+  }
+  .cast_inner .banner p {
+    font-size: 2rem;
+    line-height: 1.3;
+    color: #000;
+  }
+  .cast_inner .banner:after {
+    width: 29px;
+    height: 55px;
+    right: 35px;
+    margin-top: -28px;
+  }
+  /*knowhow*/
 
-	#story {
-		padding: 36px 0 97px;
-	}
-	.story_inner {
-		width: 80.99%;
-		/* 622 / 768 */
-		margin: 0 auto;
-	}
-	.story_inner article {
-		float: left;
-		width: 100%;
-		/* 308 / 622 */
-		height: 375px;
-		border-width: 2px;
-		/*border 로 하지말기 border-width 주의*/
-		border-radius: 4px;
-		/*6 / 622*/
-		padding: 22px;
-		background-size: 274px;
-	}
-	.story_inner article:nth-child(2) {
-		margin-right: 0;
-	}
-	#story .story_inner article:nth-child(2) {
-		display: block;
-	}
-	.story_inner .fresh {
-		background-size: 293px;
-	}
-	.story_inner .classic {
-		padding-top: 22px;
-		background-size: 239px;
-	}
-	.story_inner article > h3 {
-		height: 29px;
-		margin-bottom: 13px;
-	}
-	.story_inner .fresh h3 {
-		height: 29px;
-		background-position: 0 2px;
-		margin-bottom: 13px;
-	}
-	.story_inner .classic h3 {
-		background-position: 0 3px;
-		margin-bottom: 13px;
-	}
-	.story_inner article p {
-		font-size: 1.7rem;
-		line-height: 1.118;
-		/* 19 / 17 */
-		margin: 13px 0 0;
-	}
-	.story_inner .fresh p {
-		margin-bottom: 0;
-	}
-	.story_inner article a {
-		position: absolute;
-		left: auto;
-		top: 200px;
-		width: 188px;
-		height: 45px;
-		line-height: 41px;
-		font-size: 1.5rem;
-		background-color: #fff;
-	}
-	.story_inner article a:after {
-		width: 15px;
-		height: 15px;
-		margin-left: 18px;
-		vertical-align: -2px;
-		display: inline-block;
-	}
-	.story_slider_controller{
-		bottom: 50px;
-	}
-	/*cast*/
-	#cast {
-		padding-bottom: 106px;
-	}
-	.cast_inner .title {
-		height: 294px;
-		padding: 84px 0 58px;
-		margin-bottom: 38px;
-	}
-	/*margin-top 보다는 margin-bottom 주기*/
+  #knowhow {
+    padding-bottom: 72px;
+  }
+  .knowhow_inner .title {
+    height: 294px;
+    padding-top: 84px;
+    margin-bottom: 68px;
+  }
+  .knowhow_inner h2 {
+    font-size: 5.8rem;
+    margin-bottom: 30px;
+  }
+  .knowhow_inner .title a {
+    width: 350px;
+    height: 70px;
+    line-height: 66px;
+    border-width: 2px;
+    font-size: 2.1rem;
+  }
+  .knowhow_inner .title a:after {
+    width: 19px;
+    height: 20px;
+    margin-left: 36px;
+    vertical-align: -2px;
+  }
+  .knowhow_inner .section_slider {
+    width: 84.375%;
+    padding: 3px;
+    border-radius: 5px;
+    margin: 0 auto 90px;
+  }
+  .knowhow_inner .section_slider div > span {
+    height: 397px;
+  }
+  .knowhow_inner .section_slider div a {
+    padding: 30px 77px 34px;
+  }
+  .knowhow_inner .section_slider div a strong {
+    line-height: 1.25;
+    font-size: 2.4rem;
+  }
+  .knowhow_inner .banner {
+    width: 84.375%;
+    background-position: 28px center;
+    background-size: 109px;
+    margin: 0 auto 20px;
+    padding: 38px 105px 44px 201px;
+    border-radius: 5px;
+  }
+  .knowhow_inner .bannerWrap .banner {
+    background-size: 100px;
+    padding: 50px 105px 44px 201px;
+  }
+  .knowhow_inner .banner h3 {
+    font-size: 3.3rem;
+    margin-bottom: 18px;
+  }
+  .knowhow_inner .banner p {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+  .knowhow_inner .banner:after {
+    width: 29px;
+    height: 55px;
+    right: 34px;
+    bottom: 50%;
+    margin-bottom: -28px;
+  }
+  /*freinds*/
 
-	.cast_inner .title h2 {
-		font-size: 5.8rem;
-		margin-bottom: 30px;
-	}
-	/*text - padding 잴때 1px 여백 감안해서 재기*/
-	.cast_inner .title a {
-		width: 350px;
-		height: 70px;
-		line-height: 66px;
-		font-size: 2.1rem;
-	}
-	.cast_inner .title a:after {
-		width: 19px;
-		height: 20px;
-		margin-left: 36px;
-		vertical-align: -2px;
-	}
-	.cast_inner .section_slider {
-		width: 84.375%;
-		/*648 / 768*/
-		margin-bottom: 122px;
-		padding: 3px;
-		border-radius: 5px;
-		border-width: 2px;
-	}
-	/*border- strok 확인(투명도)*/
-	.cast_inner .section_slider div > span {
-		height: 397px;
-	}
-	.cast_inner .section_slider a {
-		padding: 0 34px;
-	}
-	.cast_inner .section_slider a strong {
-		height: 83px;
-		line-height: 83px;
-		font-size: 2.4rem;
-	}
-	.cast_inner .banner {
-		width: 84.375%;
-		/*648 / 768*/
-		background-position: 28px center;
-		background-size: 100px;
-		margin-bottom: 20px;
-		border-radius: 5px;
-		padding: 55px 105px 44px 158px;
-	}
-	/*line-height 빼주기 주의, 화살표 absolute로 띄울꺼라서 상관안하기*/
-	.cast_inner .banner h3 {
-		font-size: 3.3rem;
-		margin-bottom: 18px;
-	}
-	.cast_inner .banner p {
-		font-size: 2rem;
-		line-height: 1.3;
-		color: #000;
-		/*26/20*/
-	}
-	.cast_inner .banner:after {
-		width: 29px;
-		height: 55px;
-		right: 35px;
-		margin-top: -28px;
-	}
-	/*knowhow*/
+  #friends {
+    padding-bottom: 63px;
+  }
+  .friends_inner .title {
+    height: 295px;
+    padding-top: 83px;
+    margin-bottom: 38px;
+  }
+  .friends_inner .title h3 {
+    margin-bottom: 30px;
+    font-size: 5.8rem;
+  }
+  .friends_inner .title a {
+    width: 350px;
+    height: 70px;
+    font-size: 2.1rem;
+    line-height: 66px;
+    border-radius: 2px;
+  }
+  .friends_inner .title a.pc {
+    display: none;
+  }
+  .friends_inner .title a:after {
+    width: 19px;
+    height: 20px;
+    margin-left: 41px;
+    vertical-align: -2px;
+  }
+  .friends_inner .banner {
+    width: 84.375%;
+    margin-bottom: 0;
+  }
+  .friends_inner .friends_b {
+    padding: 53px 35px 43px;
+    margin-bottom: 20px;
+  }
+  .friends_inner .friends_b .bg {
+    right: -57px;
+    bottom: 0;
+    width: 277px;
+    height: 277px;
+  }
+  .friends_inner .friends_b strong {
+    font-size: 3.3rem;
+  }
+  .friends_inner .friends_b .line {
+    width: 64.81%;
+    height: 3px;
+    margin: 26px 0 27px;
+  }
+  .friends_inner .friends_b p {
+    margin-bottom: 46px;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  .friends_inner .friends_b span:last-child {
+    width: 250px;
+    height: 70px;
+    font-size: 2.1rem;
+    line-height: 66px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+  }
+  .friends_inner .banner:nth-of-type(2) {
+    margin-bottom: 40px;
+    padding: 33px 94px 38px 211px;
+    border-radius: 0;
+    background-position: 60px center;
+    background-size: 110px;
+  }
+  .friends_inner .banner:nth-of-type(2) h4 {
+    margin-bottom: 17px;
+    font-size: 1.8rem;
+  }
+  .friends_inner .banner:nth-of-type(2) p {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+  .friends_inner .banner:nth-of-type(2):after {
+    width: 29px;
+    height: 55px;
+    right: 34px;
+    margin-top: -28px;
+  }
+  .friends_inner .box {
+    width: 84.375%;
+  }
+  .friends_inner .bannerBox {
+    height: 225px;
+    padding-top: 25px;
+    border-width: 2px;
+  }
+  .friends_inner .bannerBox h4 {
+    padding-top: 141px;
+    background-size: 123px;
+    font-size: 2.1rem;
+  }
+  .friends_inner .bannerBox:last-child h4 {
+    background-position: center 9px;
+    background-size: 106px;
+  }
 
-	#knowhow {
-		padding-bottom: 72px;
-	}
-	.knowhow_inner .title {
-		height: 294px;
-		padding-top: 84px;
-		margin-bottom: 68px;
-	}
-	.knowhow_inner h2 {
-		font-size: 5.8rem;
-		margin-bottom: 30px;
-	}
-	.knowhow_inner .title a {
-		width: 350px;
-		height: 70px;
-		line-height: 66px;
-		border-width: 2px;
-		font-size: 2.1rem;
-	}
-	.knowhow_inner .title a:after {
-		width: 19px;
-		height: 20px;
-		margin-left: 36px;
-		vertical-align: -2px;
-	}
-	.knowhow_inner .section_slider {
-		width: 84.375%;
-		/*648 / 768*/
-		padding: 3px;
-		border-radius: 5px;
-		margin: 0 auto 90px;
-	}
-	.knowhow_inner .section_slider div > span {
-		height: 397px;
-	}
-	.knowhow_inner .section_slider div a {
-		padding: 30px 77px 34px;
-	}
-	.knowhow_inner .section_slider div a strong {
-		line-height: 1.25;
-		/*30 / 24*/
-		font-size: 2.4rem;
-	}
-	.knowhow_inner .banner {
-		width: 84.375%;
-		/*648 / 768*/
-		background-position: 28px center;
-		background-size: 109px;
-		margin: 0 auto 20px;
-		padding: 38px 105px 44px 201px;
-		border-radius: 5px;
-	}
-	.knowhow_inner .bannerWrap .banner {
-		background-size: 100px;
-		padding: 50px 105px 44px 201px;
-	}
-	.knowhow_inner .banner h3 {
-		font-size: 3.3rem;
-		margin-bottom: 18px;
-	}
-	.knowhow_inner .banner p {
-		font-size: 2rem;
-		line-height: 1.3;
-		/*26 /20*/
-	}
-	.knowhow_inner .banner:after {
-		width: 29px;
-		height: 55px;
-		right: 34px;
-		bottom: 50%;
-		margin-bottom: -28px;
-	}
-	/*freinds*/
+  /*sns*/
 
-	#friends {
-		padding-bottom: 63px;
-	}
-	.friends_inner .title {
-		height: 295px;
-		padding-top: 83px;
-		margin-bottom: 38px;
-	}
-	.friends_inner .title h3 {
-		margin-bottom: 30px;
-		font-size: 5.8rem;
-	}
-	.friends_inner .title a {
-		width: 350px;
-		height: 70px;
-		font-size: 2.1rem;
-		line-height: 66px;
-		border-radius: 2px;
-	}
-	.friends_inner .title a.pc {
-		display: none;
-	}
-	.friends_inner .title a:after {
-		width: 19px;
-		height: 20px;
-		margin-left: 41px;
-		vertical-align: -2px;
-	}
-	.friends_inner .banner {
-		width: 84.375%;
-		/*648 / 768*/
-		margin-bottom: 0;
-	}
-	.friends_inner .friends_b {
-		padding: 53px 35px 43px;
-		margin-bottom: 20px;
-	}
-	.friends_inner .friends_b .bg {
-		right: -57px;
-		bottom: 0;
-		width: 277px;
-		height: 277px;
-	}
-	.friends_inner .friends_b strong {
-		font-size: 3.3rem;
-	}
-	.friends_inner .friends_b .line {
-		width: 64.81%;
-		/*420 / 648 */
-		height: 3px;
-		margin: 26px 0 27px;
-	}
-	.friends_inner .friends_b p {
-		margin-bottom: 46px;
-		font-size: 2rem;
-		line-height: 1.2;
-	}
-	.friends_inner .friends_b span:last-child {
-		width: 250px;
-		height: 70px;
-		font-size: 2.1rem;
-		line-height: 66px;
-		background-color: rgba(255, 255, 255, .5);
-		border-radius: 2px;
-	}
-	.friends_inner .banner:nth-of-type(2) {
-		margin-bottom: 40px;
-		padding: 33px 94px 38px 211px;
-		border-radius: 0;
-		background-position: 60px center;
-		background-size: 110px;
-	}
-	.friends_inner .banner:nth-of-type(2) h4 {
-		margin-bottom: 17px;
-		font-size: 1.8rem;
-	}
-	.friends_inner .banner:nth-of-type(2) p {
-		font-size: 2rem;
-		line-height: 1.3;
-		/*26 / 20*/
-	}
-	.friends_inner .banner:nth-of-type(2):after {
-		width: 29px;
-		height: 55px;
-		right: 34px;
-		margin-top: -28px;
-	}
-	.friends_inner .box {
-		width: 84.375%;
-		/*648 / 768*/
-	}
-	.friends_inner .bannerBox {
-		height: 225px;
-		padding-top: 25px;
-		border-width: 2px;
-	}
-	.friends_inner .bannerBox h4 {
-		padding-top: 141px;
-		background-size: 123px;
-		font-size: 2.1rem;
-	}
-	.friends_inner .bannerBox:last-child h4 {
-		background-position: center 9px;
-		background-size: 106px;
-	}
+  #sns {
+    padding: 76px 0 86px;
+  }
+  .sns_inner .title {
+    margin-bottom: 50px;
+  }
+  .sns_inner .title h2 {
+    font-size: 5.9rem;
+    margin-bottom: 24px;
+  }
+  .sns_inner .title p {
+    font-size: 2.1rem;
+  }
+  .sns_inner .sns_link {
+    width: 84.375%;
+    margin-bottom: 62px;
+  }
+  .sns_inner .sns_link ul li {
+    float: left;
+    width: calc((100% - 70px) / 5);
+  }
+  .sns_inner .sns_link ul li:last-child {
+    width: 70px;
+  }
+  .sns_inner .sns_link ul li a {
+    width: 70px;
+    height: 70px;
+  }
+  .sns_inner .sns_con {
+    width: 84.375%;
+  }
+  .sns_inner .sns_con a {
+    height: 274px;
+  }
+  .sns_inner .sns_con a:last-child {
+    border-top: none;
+  }
+  .sns_inner .sns_con a .txt {
+    border-left: none;
+    padding: 18px 5px 0 10px;
+  }
+  .sns_inner .sns_con a:last-child .txt {
+    border-left: none;
+  }
+  .sns_inner .sns_con .txt h3 {
+    height: 36px;
+    line-height: 36px;
+    font-size: 1.8rem;
+  }
+  .sns_inner .sns_con .txt p {
+    left: 10px;
+    bottom: 46px;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  .sns_inner .sns_con a:last-child .txt p {
+    right: 10px;
+    bottom: 46px;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
 
-	/*sns*/
+  /*footer*/
+  .link_wrap > a {
+    height: 99px;
+    font-size: 2rem;
+    line-height: 99px;
+  }
+  .link_wrap ul.foot_btn li,
+  .copy_wrap > span {
+    height: 78px;
+    line-height: 78px;
+    font-size: 2rem;
+  }
+  .link_wrap > a {
+    padding-left: 7.683%;
+  }
+  .link_wrap ul.foot_btn li a {
+    padding-left: 15.365%;
+  }
+  .copy_wrap > span a {
+    padding-left: 7.682%;
+    font-size: 2rem;
+  }
+  .copy_wrap > span a:before {
+    width: 34px;
+    height: 33px;
+  }
 
-	#sns {
-		padding: 76px 0 86px;
-	}
-	.sns_inner .title {
-		margin-bottom: 50px;
-	}
-	.sns_inner .title h2 {
-		font-size: 5.9rem;
-		margin-bottom: 24px;
-	}
-	.sns_inner .title p {
-		font-size: 2.1rem;
-	}
-	.sns_inner .sns_link {
-		width: 84.375%;
-		/*648 / 768*/
-		margin-bottom: 62px;
-	}
-	.sns_inner .sns_link ul li {
-		float: left;
-		/*width:16.667%; text-align:center; 할 수 있지만 양쪽에 px로 고정을해서 비율 유지 하기 위해 calc 사용함*/
-		width: calc((100% - 70px)/5);
-	}
-	.sns_inner .sns_link ul li:last-child {
-		width: 70px;
-	}
-	.sns_inner .sns_link ul li a {
-		width: 70px;
-		height: 70px;
-	}
-	.sns_inner .sns_con {
-		width: 84.375%;
-		/*648 / 768*/
-	}
-	.sns_inner .sns_con a {
-		height: 274px;
-	}
-	.sns_inner .sns_con a:last-child {
-		border-top: none;
-	}
-	.sns_inner .sns_con a .txt {
-		border-left: none;
-		padding: 18px 5px 0 10px;
-	}
-	.sns_inner .sns_con a:last-child .txt {
-		border-left: none;
-	}
-	.sns_inner .sns_con .txt h3 {
-		height: 36px;
-		line-height: 36px;
-		font-size: 1.8rem;
-	}
-	.sns_inner .sns_con .txt p {
-		left: 10px;
-		bottom: 46px;
-		font-size: 2rem;
-		line-height: 1.2;
-		/*24/20*/
-	}
-	.sns_inner .sns_con a:last-child .txt p {
-		right: 10px;
-		bottom: 46px;
-		font-size: 2rem;
-		line-height: 1.2;
-		/*24/20*/
-	}
-
-	/*footer*/
-	.link_wrap > a {
-		height: 99px;
-		font-size: 2rem;
-		line-height: 99px;
-	}
-	.link_wrap ul.foot_btn li,
-	.copy_wrap > span {
-		height: 78px;
-		line-height: 78px;
-		font-size: 2rem;
-	}
-	.link_wrap > a {
-		padding-left: 7.683%;
-		/*59 / 768*/
-	}
-	.link_wrap ul.foot_btn li a {
-		padding-left: 15.365%;
-		/*59 / 384*/
-	}
-	.copy_wrap > span a {
-		padding-left: 7.682%;
-		/* 59/ 768 */
-		font-size: 2rem;
-	}
-	/*a태그의 부모 span이 100%*/
-	.copy_wrap > span a:before {
-		width: 34px;
-		height: 33px;
-	}
-
-	.copy_wrap > span a:last-child {
-		padding-left: 6.51%;
-	}
-	/*50 / 768 */
-	.copy_wrap > span a:last-child:before {
-		width: 32px;
-		height: 42px;
-		margin-right: 11px;
-	}
-	.copy_wrap .copy {
-		margin-top: 43px;
-	}
-	.copy_wrap .copy > span {
-		width: 79px;
-		margin-bottom: 49px;
-	}
-	.copy_wrap .copy p > span {
-		font-size: 2.2rem;
-		line-height: 1.455;
-	}
-	/*32/22*/
-	.copy_wrap .copy p > span:last-child {
-		display: block;
-	}
-	/*줄바꿈*/
-	.copy_wrap .copy p > span:first-child:after {
-		margin: 0 22px;
-	}
-	.copy_wrap .copy p:last-child {
-		height: 88px;
-		line-height: 88px;
-		font-size: 1.8rem;
-		margin-top: 34px;
-	}
+  .copy_wrap > span a:last-child {
+    padding-left: 6.51%;
+  }
+  .copy_wrap > span a:last-child:before {
+    width: 32px;
+    height: 42px;
+    margin-right: 11px;
+  }
+  .copy_wrap .copy {
+    margin-top: 43px;
+  }
+  .copy_wrap .copy > span {
+    width: 79px;
+    margin-bottom: 49px;
+  }
+  .copy_wrap .copy p > span {
+    font-size: 2.2rem;
+    line-height: 1.455;
+  }
+  .copy_wrap .copy p > span:last-child {
+    display: block;
+  }
+  .copy_wrap .copy p > span:first-child:after {
+    margin: 0 22px;
+  }
+  .copy_wrap .copy p:last-child {
+    height: 88px;
+    line-height: 88px;
+    font-size: 1.8rem;
+    margin-top: 34px;
+  }
 }
-/*--------------------------------------------------------------------------------------------*/
 
-@media all and (min-width:1024px) {
+@media all and (min-width: 1024px) {
+  .pc {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+  .pc_only {
+    display: none;
+  }
+  .main_prevBtn.pc {
+    display: none;
+  }
+  .main_nextBtn.pc {
+    display: none;
+  }
+  .main_slider_pagers .bx-pager-item a.bx-pager-link {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+  }
+  .main_slider_controls .bx-controls-auto .bx-start {
+    width: 14px;
+    height: 14px;
+    background-size: contain;
+  }
+  .main_slider_controls .bx-controls-auto .bx-stop {
+    width: 14px;
+    height: 14px;
+    background-size: contain;
+  }
+  .story_prevBtn.pc {
+    display: none;
+  }
+  .story_nextBtn.pc {
+    display: none;
+  }
+  .story_slider_pagers .bx-pager-item a.bx-pager-link {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+  }
+  .story_slider_controls .bx-controls-auto .bx-start {
+    width: 14px;
+    height: 14px;
+    background-size: contain;
+  }
+  .story_slider_controls .bx-controls-auto .bx-stop {
+    width: 14px;
+    height: 14px;
+    background-size: contain;
+  }
+  /*header*/
+  #header {
+    height: 135px;
+    position: relative;
+  }
+  #header.on {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 70px;
+  }
+  #header.on .header_top {
+    display: none;
+  }
+  .logo {
+    left: -9999px;
+  }
+  .header_top {
+    width: 88.477%;
+    height: 56px;
+    margin: 0 auto;
+  }
+  .sch_form {
+    float: left;
+    position: relative;
+    margin-top: 13px;
+  }
+  .sch_wrap {
+    display: block;
+    width: auto;
+    height: 100%;
+    position: static;
+  }
+  .sch_wrap input {
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #969696;
+    border-radius: 0;
+    background-color: transparent;
+    margin: 0;
+    padding-left: 10px;
+    font-size: 1.6rem;
+  }
+  .sch_wrap .btn_sch {
+    width: 15px;
+    height: 15px;
+    background: url(../img/cjw-icon-search1.png) no-repeat;
+    background-size: contain;
+    border-radius: 0;
+    vertical-align: 0;
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+  }
+  .t_menu {
+    float: right;
+    margin-top: 22px;
+  }
+  .t_menu li {
+    float: left;
+    margin-left: 30px;
+    position: relative;
+  }
+  .t_menu li:before {
+    content: "";
+    width: 1px;
+    height: 14px;
+    background-color: #808080;
+    position: absolute;
+    left: -15px;
+    top: 1px;
+  }
+  .t_menu li:first-child:before {
+    display: none;
+  }
+  .t_menu li a {
+    font-size: 1.4rem;
+    color: #808080;
+  }
+  .t_menu li:first-child a {
+    color: #00b4d8;
+  }
+  #navWrap {
+    display: block;
+    height: auto;
+    position: static;
+    border-top: 1px solid #cfcfcf;
+    background-color: #fff;
+  }
+  #header.on #navWrap {
+    border-top: none;
+  }
+  .nav_inner {
+    width: 88.477%;
+    height: auto;
+    position: static;
+    padding-top: 0px;
+    overflow: visible;
+    margin: 0 auto;
+  }
+  .nav_inner > div {
+    width: auto;
+    margin: 0;
+    float: left;
+  }
+  .nav_inner > div a:nth-child(1) {
+    width: 120px;
+    height: 42px;
+    margin-top: 18px;
+  }
+  #header.on .nav_inner > div a:nth-child(1) {
+    width: 110px;
+    height: 39px;
+    margin-top: 17px;
+  }
+  .nav_inner .gnb {
+    float: right;
+    width: auto;
+    margin-left: 0;
+    border-top: none;
+  }
+  .nav_inner .gnb > li {
+    float: left;
+  }
+  .nav_inner .gnb > li:before {
+    content: "|";
+    font-size: 1.6rem;
+    color: #000;
+    margin: 0 20px;
+  }
+  .nav_inner .gnb > li:first-child:before {
+    display: none;
+  }
+  #header.on .nav_inner .nav_inner .gnb > li > a {
+    height: 70px;
+    line-height: 70px;
+    font-size: 1.5rem;
+  }
+  .nav_inner .gnb > li > a {
+    display: inline-block;
+    height: 78px;
+    line-height: 78px;
+    border-bottom: none;
+    font-size: 1.6rem;
+    color: #000;
+    padding: 0;
+  }
+  .nav_inner .gnb > li > a:hover,
+  .nav_inner .gnb > li > a:focus {
+    color: #2fb7eb;
+    font-weight: bold;
+  }
+  .nav_inner .gnb > li.open + li > a {
+    border-top: none;
+  }
+  .nav_inner .gnb > li:last-child.open > a {
+    border-bottom: none;
+  }
+  .nav_inner .gnb > li.open > a span {
+    display: block;
+    width: 25px;
+    height: 14px;
+    background-image: url(../img/cjw-arrow-nav-bottom-fill.png);
+    top: auto;
+    bottom: -15px;
+    right: 50%;
+    margin-top: 0;
+    margin-right: -13px;
+    z-index: 20;
+  }
+  .nav_inner .gnb > li > a span {
+    display: none;
+  }
+  .nav_inner .sub_wrap {
+    position: absolute;
+    left: 0;
+    top: 135px;
+    width: 100%;
+    border-top: 1px solid #cfcfcf;
+    background-color: #fff;
+  }
+  #header.on .nav_inner .sub_wrap {
+    top: 70px;
+  }
+  .nav_inner .sub_wrap_inner {
+    width: 88.477%;
+    margin: 0 auto;
+  }
+  .nav_inner .sub_inner_box {
+    height: 310px;
+    padding: 10px 0;
+  }
+  .nav_inner .sub_wrap .left {
+    float: left;
+    width: 51.876%;
+    height: 100%;
+    /*470 / 906*/
+    border-right: 1px solid #cfcfcf;
+    padding-top: 44px;
+  }
+  .nav_inner .sub_wrap ul {
+    width: 50%;
+    background-color: transparent;
+    float: left;
+  }
+  .nav_inner .gnb > li:first-child ul {
+    width: 33.333%;
+  }
+  .nav_inner .sub_wrap ul li {
+    width: auto;
+    margin-left: 0;
+    border-bottom: 0;
+  }
+  .nav_inner .sub_wrap ul li a {
+    height: auto;
+    line-height: 1;
+    padding-left: 0;
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 28px;
+  }
+  .nav_inner .sub_wrap .right {
+    float: right;
+    width: 48.124%;
+    height: 100%;
+    background: url(../img/cjw-bg-nav-brandStory.jpg) no-repeat;
+    background-position: center right;
+    padding: 41px 0 0 35px;
+  }
+  .nav_inner .sub_wrap .right h3 {
+    font-size: 3.4rem;
+    font-weight: normal;
+    color: #000;
+  }
+  .nav_inner .sub_wrap .right a {
+    display: block;
+    width: 110px;
+    height: 46px;
+    line-height: 42px;
+    border: 2px solid #cfcfcf;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 1.4rem;
+    color: #343434;
+  }
+  .nav_inner .sub_wrap .right a:after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background: url(../img/cjw-plus-story-blue.png) no-repeat;
+    background-size: contain;
+    margin-left: 19px;
+    vertical-align: -1px;
+  }
+  .nav_inner > a {
+    display: none;
+  }
 
-	.pc {
-		display: block;
-	}
-	.mobile {
-		display: none;
-	}
-	.pc_only{
-		display: none;
-	}
-	.main_prevBtn.pc {
-		display: none;
-	}
-	.main_nextBtn.pc {
-		display: none;
-	}
-	.main_slider_pagers .bx-pager-item a.bx-pager-link{
-		width: 12px;
-		height: 12px;
-		border-radius: 100%;
-	}
-	.main_slider_controls .bx-controls-auto .bx-start {
-		width: 14px;
-		height: 14px;
-		background-size: contain;
-	}
-	.main_slider_controls .bx-controls-auto .bx-stop {
-		width: 14px;
-		height: 14px;
-		background-size: contain;
-	}
-	.story_prevBtn.pc {
-		display: none;
-	}
-	.story_nextBtn.pc {
-		display: none;
-	}
-	.story_slider_pagers .bx-pager-item a.bx-pager-link{
-		width: 12px;
-		height: 12px;
-		border-radius: 100%;
-	}
-	.story_slider_controls .bx-controls-auto .bx-start {
-		width: 14px;
-		height: 14px;
-		background-size: contain;
-	}
-	.story_slider_controls .bx-controls-auto .bx-stop {
-		width: 14px;
-		height: 14px;
-		background-size: contain;
-	}
-	/*header*/
-	#header {
-		height: 135px;
-		position: relative;
-	}
-	/*position:fixed 해지 - static*/
-	#header.on {
-		position: fixed;
-		left: 0;
-		top: 0;
-		height: 70px;
-	}
-	#header.on .header_top {
-		display: none;
-	}
-	.logo {
-		left: -9999px
-	}
-	.header_top {
-		width: 88.477%;
-		/*906 / 1024*/
-		height: 56px;
-		margin: 0 auto;
-	}
-	.sch_form {
-		float: left;
-		position: relative;
-		margin-top: 13px;
-	}
-	.sch_wrap {
-		display: block;
-		width: auto;
-		/*width - 초기화 */
-		height: 100%;
-		position: static;
-	}
-	.sch_wrap input {
-		width: 140px;
-		/* 500 / 750 */
-		height: 30px;
-		line-height: 30px;
-		border-bottom: 1px solid #969696;
-		border-radius: 0;
-		background-color: transparent;
-		margin: 0;
-		padding-left: 10px;
-		font-size: 1.6rem;
-	}
-	.sch_wrap .btn_sch {
-		width: 15px;
-		height: 15px;
-		background: url(../img/cjw-icon-search1.png) no-repeat;
-		background-size: contain;
-		border-radius: 0;
-		vertical-align: 0;
-		position: absolute;
-		bottom: 8px;
-		right: 0;
-	}
-	.t_menu {
-		float: right;
-		margin-top: 22px;
-	}
-	.t_menu li {
-		float: left;
-		margin-left: 30px;
-		position: relative;
-	}
-	.t_menu li:before {
-		content: '';
-		width: 1px;
-		height: 14px;
-		background-color: #808080;
-		position: absolute;
-		left: -15px;
-		top: 1px;
-	}
-	/*가상태그 - 인라인태그-> position 주면 블럭으로 */
-	.t_menu li:first-child:before {
-		display: none;
-	}
-	.t_menu li a {
-		font-size: 1.4rem;
-		color: #808080;
-	}
-	.t_menu li:first-child a {
-		color: #00b4d8;
-	}
-	#navWrap {
-		display: block;
-		height: auto;
-		position: static;
-		border-top: 1px solid #cfcfcf;
-		background-color: #fff;
-	}
-	/*position fixed - left, top , z-index 포함*/
-	#header.on #navWrap {
-		border-top: none;
-	}
-	.nav_inner {
-		width: 88.477%;
-		height: auto;
-		position: static;
-		padding-top: 0px;
-		overflow: visible;
-		margin: 0 auto;
-	}
-	.nav_inner > div {
-		width: auto;
-		margin: 0;
-		float: left;
-	}
-	.nav_inner > div a:nth-child(1) {
-		width: 120px;
-		height: 42px;
-		margin-top: 18px;
-	}
-	#header.on .nav_inner > div a:nth-child(1) {
-		width: 110px;
-		height: 39px;
-		margin-top: 17px;
-	}
-	.nav_inner .gnb {
-		float: right;
-		width: auto;
-		margin-left: 0;
-		border-top: none;
-	}
-	.nav_inner .gnb > li {
-		float: left;
-	}
-	.nav_inner .gnb > li:before {
-		content: '|';
-		font-size: 1.6rem;
-		color: #000;
-		margin: 0 20px;
-	}
-	/*a - display:block 하면 위로 뜨기때문에 inline-block 주기*/
-	.nav_inner .gnb > li:first-child:before {
-		display: none;
-	}
-	#header.on .nav_inner .nav_inner .gnb > li > a {
-		height: 70px;
-		line-height: 70px;
-		font-size: 1.5rem;
-	}
-	.nav_inner .gnb > li > a {
-		display: inline-block;
-		height: 78px;
-		line-height: 78px;
-		border-bottom: none;
-		font-size: 1.6rem;
-		color: #000;
-		padding: 0;
-	}
-	.nav_inner .gnb > li > a:hover,
-	.nav_inner .gnb > li > a:focus {
-		color: #2fb7eb;
-		font-weight: bold;
-	}
-	/*pc 버전은 hover 넣을때 focus 넣어주기*/
-	/*font에 따라 bold 채 밀림 주의*/
-	.nav_inner .gnb > li.open + li > a {
-		border-top: none;
-	}
-	.nav_inner .gnb > li:last-child.open > a {
-		border-bottom: none;
-	}
-	.nav_inner .gnb > li.open > a span {
-		display: block;
-		width: 25px;
-		height: 14px;
-		background-image: url(../img/cjw-arrow-nav-bottom-fill.png);
-		top: auto;
-		/*top 초기화*/
-		bottom: -15px;
-		right: 50%;
-		/* 12 / 422 */
-		margin-top: 0;
-		margin-right: -13px;
-		/*가운데 정렬 - width의 절반*/
-		z-index: 20;
-		/*밑에(sub_wrap) absolute 시키면 안보이기 때문*/
-	}
-	.nav_inner .gnb > li > a span {
-		display: none;
-	}
-	.nav_inner .sub_wrap {
-		position: absolute;
-		left: 0;
-		top: 135px;
-		width: 100%;
-		border-top: 1px solid #cfcfcf;
-		background-color: #fff;
-	}
-	#header.on .nav_inner .sub_wrap {
-		top: 70px;
-	}
-	.nav_inner .sub_wrap_inner {
-		width: 88.477%;
-		/*906 / 1024*/
-		margin: 0 auto;
-	}
-	.nav_inner .sub_inner_box {
-		height: 310px;
-		padding: 10px 0;
-	}
-	/*pc sub_inner 가운데 border 잡아주기 위해*/
-	.nav_inner .sub_wrap .left {
-		float: left;
-		width: 51.876%;
-		height: 100%;
-		/*470 / 906*/
-		border-right: 1px solid #cfcfcf;
-		padding-top: 44px;
-	}
-	/*border를 left에 넣는다면 border값 포함*/
-	/*height 100% 가 다 되는건 아니지만 float:left 있다면 사용 할수 있음*/
-	.nav_inner .sub_wrap ul {
-		width: 50%;
-		background-color: transparent;
-		float: left;
-	}
-	.nav_inner .gnb > li:first-child ul {
-		width: 33.333%;
-	}
-	.nav_inner .sub_wrap ul li {
-		width: auto;
-		margin-left: 0;
-		border-bottom: 0;
-		/*none 가능*/
-	}
-	.nav_inner .sub_wrap ul li a {
-		height: auto;
-		line-height: 1;
-		/*line-height 없애는 법 , font-size 따란간다는 뜻*/
-		padding-left: 0;
-		font-size: 2rem;
-		color: #000;
-		margin-bottom: 28px;
-	}
-	.nav_inner .sub_wrap .right {
-		float: right;
-		width: 48.124%;
-		/*100 - 51.876%(left의 width 값)*/
-		height: 100%;
-		background: url(../img/cjw-bg-nav-brandStory.jpg) no-repeat;
-		background-position: center right;
-		padding: 41px 0 0 35px;
-	}
-	.nav_inner .sub_wrap .right h3 {
-		font-size: 3.4rem;
-		font-weight: normal;
-		color: #000;
-	}
-	.nav_inner .sub_wrap .right a {
-		display: block;
-		width: 110px;
-		height: 46px;
-		line-height: 42px;
-		border: 2px solid #cfcfcf;
-		text-align: center;
-		margin-top: 25px;
-		font-size: 1.4rem;
-		color: #343434;
-	}
-	.nav_inner .sub_wrap .right a:after {
-		content: '';
-		width: 12px;
-		height: 12px;
-		display: inline-block;
-		background: url(../img/cjw-plus-story-blue.png) no-repeat;
-		background-size: contain;
-		margin-left: 19px;
-		vertical-align: -1px;
-	}
-	.nav_inner > a {
-		display: none;
-	}
+  /*visual*/
 
-	/*visual*/
+  #visual {
+    margin-top: 0;
+  }
+  #visual.on {
+    margin-top: 150px;
+  }
+  .slider {
+    height: 638px;
+  }
+  .img_wrap {
+    height: 638px;
+    padding-top: 134px;
+  }
+  .img_wrap > span {
+    font-size: 3.8rem;
+  }
+  .img_wrap h2 {
+    font-size: 8.3rem;
+    margin-top: 18px;
+    margin-bottom: 25px;
+  }
+  .img_wrap p {
+    width: 82%;
+    font-size: 2.5rem;
+    line-height: 1.24;
+    margin-bottom: 45px;
+  }
+  .img_wrap a {
+    width: 350px;
+    height: 80px;
+    border-radius: 4px;
+    line-height: 78px;
+    border-width: 1px;
+    font-size: 2.5rem;
+  }
 
-	#visual {
-		margin-top: 0;
-	}
-	#visual.on {
-		margin-top: 150px;
-	}
-	.slider {
-		height: 638px;
-	}
-	.img_wrap {
-		height: 638px;
-		padding-top: 134px;
-	}
-	.img_wrap > span {
-		font-size: 3.8rem;
-	}
-	.img_wrap h2 {
-		font-size: 8.3rem;
-		margin-top: 18px;
-		margin-bottom: 25px;
-	}
-	.img_wrap p {
-		width: 82%;
-		/*840 / 1024*/
-		font-size: 2.5rem;
-		line-height: 1.24;
-		/*31 / 25*/
-		margin-bottom: 45px;
-	}
-	.img_wrap a {
-		width: 350px;
-		height: 80px;
-		border-radius: 4px;
-		line-height: 78px;
-		border-width: 1px;
-		font-size: 2.5rem;
-	}
+  /*story - smart fresh classic*/
 
-	/*story - smart fresh classic*/
+  #story {
+    padding: 150px 0 102px;
+  }
+  .story_inner {
+    width: 85%;
+  }
+  .story_inner article {
+    width: 100%;
+    height: 500px;
+    border-width: 1px;
+    padding: 35px;
+    background-size: 365px;
+  }
+  .story_inner .fresh {
+    padding-top: 35px;
+    background-size: 390px;
+  }
+  .story_inner .classic {
+    padding-top: 35px;
+    background-size: 318px;
+    margin-right: 0;
+  }
+  .story_inner article > h3 {
+    width: 96px;
+    height: 38px;
+    margin-bottom: 19px;
+  }
+  .story_inner .fresh h3 {
+    height: 38px;
+    margin-bottom: 19px;
+  }
+  .story_inner .classic h3 {
+    background-position: 0 3px;
+    margin-bottom: 19px;
+  }
+  .story_inner article strong {
+    font-size: 2.5rem;
+    line-height: 1.32;
+  }
+  .story_inner article p {
+    font-size: 2.1rem;
+    line-height: 1.19;
+    margin: 16px 0 0;
+    position: absolute;
+  }
+  .story_inner article a {
+    position: absolute;
+    left: auto;
+    top: 260px;
+    width: 250px;
+    height: 60px;
+    line-height: 58px;
+    border-width: 1px;
+    font-size: 2.1rem;
+  }
+  .story_inner article a:after {
+    width: 20px;
+    height: 20px;
+    margin-left: 25px;
+  }
+  .story_slider_controller {
+    bottom: 50px;
+  }
 
-	#story {
-		padding: 150px 0 102px;
-	}
-	.story_inner {
-		width: 85%;
-	}
-	.story_inner article {
-		width: 100%;
-		/* 410 / 840 */
-		height: 500px;
-		border-width: 1px;
-		/*20 / 840*/
-		padding: 35px;
-		background-size: 365px;
-	}
-	.story_inner .fresh {
-		padding-top: 35px;
-		background-size: 390px;
-	}
-	.story_inner .classic {
-		padding-top: 35px;
-		background-size: 318px;
-		margin-right: 0;
-	}
-	.story_inner article > h3 {
-		width: 96px;
-		height: 38px;
-		margin-bottom: 19px;
-	}
-	.story_inner .fresh h3 {
-		height: 38px;
-		margin-bottom: 19px;
-	}
-	.story_inner .classic h3 {
-		background-position: 0 3px;
-		margin-bottom: 19px;
-	}
-	.story_inner article strong {
-		font-size: 2.5rem;
-		line-height: 1.32;
-		/* 33 / 25 */
-	}
-	.story_inner article p {
-		font-size: 2.1rem;
-		line-height: 1.19;
-		/* 25 / 21 */
-		margin: 16px 0 0;
-		position: absolute;
-	}
-	.story_inner article a {
-		position: absolute;
-		left: auto;
-		top: 260px;
-		width: 250px;
-		height: 60px;
-		line-height: 58px;
-		border-width: 1px;
-		font-size: 2.1rem;
-	}
-	.story_inner article a:after {
-		width: 20px;
-		height: 20px;
-		margin-left: 25px;
-	}
-	.story_slider_controller{
-		bottom: 50px;
-	}
+  /*cast*/
 
-	/*cast*/
+  #cast {
+    background: url(../img/cjw-bg-foodCast.jpg) no-repeat;
+    background-size: cover;
+    padding: 74px 0 76px;
+  }
+  .cast_inner {
+    width: 82.031%;
+    margin: 0 auto;
+  }
+  .cast_inner .title {
+    float: left;
+    width: 38.81%;
+    height: 250px;
+    background: none;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .cast_inner .title h2 {
+    margin-bottom: 27px;
+  }
+  .cast_inner .title a {
+    width: 290px;
+    height: 78px;
+    line-height: 74px;
+    text-align: center;
+  }
+  .cast_inner .title a:after {
+    margin-left: 11px;
+  }
+  .cast_inner .section_slider {
+    float: right;
+    width: 61.19%;
+    height: 780px;
+    margin: 0;
+    padding: 2px;
+    border: none;
+    border-radius: 5px 5px 5px 0;
+  }
+  .cast_inner .section_slider div > span {
+    height: 498px;
+    border-radius: 3px 3px 0 0;
+  }
+  .cast_inner .section_slider a {
+    height: 278px;
+    padding: 39px 32px 0;
+  }
+  .cast_inner .section_slider a h3,
+  .cast_inner .section_slider a p,
+  .cast_inner .section_slider a span {
+    display: block;
+  }
+  .cast_inner .section_slider a h3,
+  .cast_inner .banner h3 {
+    font-size: 3.3rem;
+    color: #000;
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+  .cast_inner .section_slider a h3:after,
+  .cast_inner .banner h3:after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: rgba(0, 181, 216, 0.5);
+    display: block;
+    margin: 16px auto 14px;
+  }
+  .cast_inner .banner h3:after {
+    margin-bottom: 12px;
+    background-color: #02b5d6;
+  }
+  .cast_inner .banner:nth-of-type(2) h3:after {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  .cast_inner .section_slider a strong {
+    height: auto;
+    line-height: 1;
+    font-size: 2.1rem;
+    color: #000;
+  }
+  .cast_inner .section_slider a p {
+    font-size: 1.7rem;
+    line-height: 1.176;
+    /*20 / 17*/
+    color: #909090;
+    margin: 10px 0 18px;
+  }
+  .cast_inner .section_slider a span,
+  .cast_inner .banner span {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    font-size: 2.1rem;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 2px;
+    background-color: #00b5d8;
+  }
+  .cast_inner .banner span {
+    margin-top: 20px;
+  }
+  .cast_inner .banner:nth-of-type(2) span {
+    background-color: #fff;
+    color: #000;
+  }
+  .cast_inner .banner {
+    float: left;
+  }
+  .cast_inner .banner {
+    width: 38.81%;
+    height: 250px;
+    border-radius: 5px 0 0 0;
+    margin: 0;
+    padding: 39px 30px 0px;
+    background: none;
+    background-color: #fff;
+    text-align: center;
+  }
+  .cast_inner .banner:nth-of-type(2) {
+    background: none;
+    background-color: #02b5d6;
+    height: 280px;
+    border-radius: 0 0 0 5px;
+  }
+  .cast_inner .banner:nth-of-type(2) h3,
+  .cast_inner .banner:nth-of-type(2) p {
+    color: #fff;
+  }
+  .cast_inner .banner p {
+    line-height: 1.095;
+    font-size: 2.1rem;
+    color: #000;
+    margin-bottom: 18px;
+  }
+  .cast_inner .banner:after {
+    display: none;
+  }
 
-	#cast {
-		background: url(../img/cjw-bg-foodCast.jpg) no-repeat;
-		background-size: cover;
-		padding: 74px 0 76px;
-	}
-	.cast_inner {
-		width: 82.031%;
-		/*840 / 1024*/
-		margin: 0 auto;
-	}
-	/*가운데 정렬*/
-	.cast_inner .title {
-		float: left;
-		width: 38.81%;
-		/*326 / 840*/
-		height: 250px;
-		background: none;
-		text-align: left;
-		padding: 0;
-		margin-bottom: 0;
-	}
-	.cast_inner .title h2 {
-		margin-bottom: 27px;
-	}
-	.cast_inner .title a {
-		width: 290px;
-		height: 78px;
-		line-height: 74px;
-		text-align: center;
-	}
-	.cast_inner .title a:after {
-		margin-left: 11px;
-	}
-	.cast_inner .section_slider {
-		float: right;
-		width: 61.19%;
-		/*100 - 38.81%;*/
-		height: 780px;
-		margin: 0;
-		padding: 2px;
-		border: none;
-		border-radius: 5px 5px 5px 0;
-	}
-	.cast_inner .section_slider div > span {
-		height: 498px;
-		border-radius: 3px 3px 0 0;
-	}
-	.cast_inner .section_slider a {
-		height: 278px;
-		/*padding 2px 빼기*/
-		padding: 39px 32px 0;
-	}
-	.cast_inner .section_slider a h3,
-	.cast_inner .section_slider a p,
-	.cast_inner .section_slider a span {
-		display: block;
-	}
-	.cast_inner .section_slider a h3,
-	.cast_inner .banner h3 {
-		font-size: 3.3rem;
-		color: #000;
-		font-weight: normal;
-		margin-bottom: 0;
-	}
-	.cast_inner .section_slider a h3:after,
-	.cast_inner .banner h3:after {
-		content: "";
-		width: 60px;
-		height: 3px;
-		background-color: rgba(0, 181, 216, .5);
-		display: block;
-		margin: 16px auto 14px;
-	}
-	.cast_inner .banner h3:after {
-		margin-bottom: 12px;
-		background-color: #02b5d6;
-	}
-	.cast_inner .banner:nth-of-type(2) h3:after {
-		background-color: rgba(255, 255, 255, .7);
-	}
-	.cast_inner .section_slider a strong {
-		height: auto;
-		line-height: 1;
-		font-size: 2.1rem;
-		color: #000;
-	}
-	.cast_inner .section_slider a p {
-		font-size: 1.7rem;
-		line-height: 1.176;
-		/*20 / 17*/
-		color: #909090;
-		margin: 10px 0 18px;
-	}
-	.cast_inner .section_slider a span,
-	.cast_inner .banner span {
-		display: inline-block;
-		/*display:block 이니까 margin:0 auto; 사용해도 됨*/
-		width: 200px;
-		height: 50px;
-		color: #fff;
-		font-size: 2.1rem;
-		text-align: center;
-		line-height: 50px;
-		border-radius: 2px;
-		background-color: #00b5d8;
-	}
-	.cast_inner .banner span {
-		margin-top: 20px
-	}
-	.cast_inner .banner:nth-of-type(2) span {
-		background-color: #fff;
-		color: #000;
-	}
-	.cast_inner .banner {
-		float: left;
-	}
-	.cast_inner .banner {
-		width: 38.81%;
-		/*326 / 840*/
-		height: 250px;
-		border-radius: 5px 0 0 0;
-		margin: 0;
-		padding: 39px 30px 0px;
-		background: none;
-		background-color: #fff;
-		text-align: center;
-	}
-	.cast_inner .banner:nth-of-type(2) {
-		background: none;
-		background-color: #02b5d6;
-		height: 280px;
-		border-radius: 0 0 0 5px;
-	}
-	.cast_inner .banner:nth-of-type(2) h3,
-	.cast_inner .banner:nth-of-type(2) p {
-		color: #fff;
-	}
-	.cast_inner .banner p{
-		line-height: 1.095;
-		/*23 / 21*/
-		font-size: 2.1rem;
-		color: #000;
-		margin-bottom: 18px;
-	}
-	.cast_inner .banner:after {
-		display: none;
-	}
+  /*knowhow*/
 
-	/*knowhow*/
+  #knowhow {
+    padding: 75px 0 76px;
+    background: url(../img/cjw-bg-foodKnowhow.jpg) no-repeat;
+    background-size: auto;
+    background-color: #f4f4f4;
+    background-position: right 450px;
+    overflow: hidden;
+  }
+  .knowhow_inner {
+    width: 91.02%;
+    margin-left: 8.99%;
+    position: relative;
+    height: 749px;
+  }
+  .knowhow_inner .title {
+    display: inline-block;
+    width: 34.98%;
+    height: 249px;
+    padding: 0;
+    margin-bottom: 0;
+    background: none;
+    text-align: left;
+  }
+  .knowhow_inner h2 {
+    color: #000;
+    margin-bottom: 27px;
+  }
+  .knowhow_inner .title a {
+    width: 290px;
+    height: 78px;
+    line-height: 74px;
+    text-align: center;
+  }
+  .knowhow_inner .title a:after {
+    margin-left: 10px;
+  }
+  .knowhow_inner .section_slider {
+    float: right;
+    width: 65.021%;
+    height: 503px;
+    padding: 0;
+    border: none;
+    border-radius: 0 0 4px 0;
+    background-color: #fff;
+    margin: 0;
+  }
+  .knowhow_inner .section_slider div {
+    height: 503px;
+  }
+  .knowhow_inner .section_slider div > span {
+    height: 251px;
+    border: 1px solid #fff;
+  }
+  .knowhow_inner .section_slider div a {
+    width: 61.5%;
+    height: 253px;
+    padding: 0;
+    float: left;
+    text-align: center;
+  }
+  .knowhow_inner .section_slider > div:after {
+    content: "";
+    display: inline-block;
+    width: 38%;
+    height: 249px;
+    background: url(../img/cjw-img-cjwRecipe.jpg) no-repeat;
+    background-position: right bottom;
+    background-size: cover;
+    border: 1px solid #fff;
+  }
+  .knowhow_inner .section_slider div a h3 {
+    font-size: 3.3rem;
+    color: #000;
+    font-weight: normal;
+    margin-top: 41px;
+  }
+  .knowhow_inner .section_slider div a h3:before {
+    display: none;
+  }
+  .knowhow_inner .section_slider div a h3:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #fcb54d;
+    margin: 16px auto 14px;
+  }
+  .knowhow_inner .section_slider div a strong {
+    line-height: 1.191;
+    font-size: 2.1rem;
+    color: #000;
+  }
+  .knowhow_inner .section_slider div a > span {
+    display: block;
+    background-color: #fcb54d;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    border-radius: 2px;
+    line-height: 50px;
+    font-size: 2.1rem;
+    margin: 16px auto 0;
+  }
+  .knowhow_inner .banner {
+    width: 40%;
+    height: 253px;
+    position: absolute;
+    top: 503px;
+    right: 50%;
+    margin: 0 -25% 0 0;
+    background: none;
+    background-color: #76d9c5;
+    padding: 37px 41px 0 31px;
+    border-radius: 0;
+  }
+  .knowhow_inner .banner h3 {
+    font-size: 3.4rem;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .knowhow_inner .banner p {
+    width: 304px;
+    height: 50px;
+    font-size: 2.1rem;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .knowhow_inner .banner span {
+    display: block;
+    background-color: #fff;
+    width: 200px;
+    height: 50px;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 21px;
+    color: #000;
+    margin: 14px auto 0;
+  }
+  .knowhow_inner .banner h3:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 17px auto 11px;
+  }
+  .knowhow_inner .banner:after {
+    background: none;
+  }
+  .knowhow_inner .bannerWrap {
+    width: 34.98%;
+  }
+  .knowhow_inner .bannerWrap .banner {
+    position: static;
+    float: left;
+    width: 100%;
+    height: 507px;
+    background-image: none;
+    margin-bottom: 0;
+    background-color: #f4cb4d;
+    padding: 32px 0 0 20px;
+    border-radius: 5px 0 0 5px;
+  }
+  .knowhow_inner .bannerWrap .banner p {
+    font-size: 1.7rem;
+    line-height: 1.24;
+    margin-top: 0;
+    position: relative;
+    text-align: inherit;
+    width: auto;
+    height: auto;
+  }
+  .knowhow_inner .bannerWrap .banner h3 {
+    font-size: 3.4rem;
+    margin-bottom: 0;
+    text-align: inherit;
+  }
+  .knowhow_inner .bannerWrap .banner h3:after {
+    content: "";
+    width: 94.3%;
+    height: 2px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 39px 0 30px 0;
+  }
+  .knowhow_inner .bannerWrap .banner p:after {
+    content: "";
+    width: 25px;
+    height: 47px;
+    display: inline-block;
+    background: url(../img/cjw-arrow-slider-right.png) no-repeat;
+    margin-right: 20px;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    top: 11px;
+  }
+  .knowhow_inner .bannerWrap .banner h3:last-child:after {
+    display: none;
+  }
 
-	#knowhow {
-		padding: 75px 0 76px;
-		background: url(../img/cjw-bg-foodKnowhow.jpg) no-repeat;
-		background-size: auto;
-		background-color: #f4f4f4;
-		background-position: right 450px;
-		overflow: hidden;
-	}
-	.knowhow_inner {
-		width: 91.02%;
-		margin-left: 8.99%;
-		position: relative;
-		height: 749px;
-	}
-	.knowhow_inner .title {
-		display: inline-block;
-		width: 34.98%;
-		/*326 / 932 */
-		height: 249px;
-		padding: 0;
-		margin-bottom: 0;
-		background: none;
-		text-align: left;
-	}
-	.knowhow_inner h2 {
-		color: #000;
-		margin-bottom: 27px;
-	}
-	.knowhow_inner .title a {
-		width: 290px;
-		height: 78px;
-		line-height: 74px;
-		text-align: center;
-	}
-	.knowhow_inner .title a:after {
-		margin-left: 10px;
-	}
-	.knowhow_inner .section_slider {
-		float: right;
-		width: 65.021%;
-		/*606 / 932*/
-		height: 503px;
-		padding: 0;
-		border: none;
-		border-radius: 0 0 4px 0;
-		background-color: #fff;
-		margin: 0;
-	}
-	.knowhow_inner .section_slider div {
-		height: 503px;
-	}
-	.knowhow_inner .section_slider div > span {
-		height: 251px;
-		border: 1px solid #fff;
-	}
-	.knowhow_inner .section_slider div a {
-		width: 61.5%;
-		/*370/606*/
-		height: 253px;
-		padding: 0;
-		float: left;
-		text-align: center;
-	}
-	.knowhow_inner .section_slider > div:after {
-		content: '';
-		display: inline-block;
-		width: 38%;
-		/*232/606*/
-		height: 249px;
-		background: url(../img/cjw-img-cjwRecipe.jpg) no-repeat;
-		background-position: right bottom;
-		background-size: cover;
-		border: 1px solid #fff;
-	}
-	.knowhow_inner .section_slider div a h3 {
-		font-size: 3.3rem;
-		color: #000;
-		font-weight: normal;
-		margin-top: 41px;
-	}
-	.knowhow_inner .section_slider div a h3:before {
-		display: none;
-	}
-	.knowhow_inner .section_slider div a h3:after {
-		content: '';
-		display: block;
-		width: 60px;
-		height: 3px;
-		background-color: #fcb54d;
-		margin: 16px auto 14px;
-	}
-	.knowhow_inner .section_slider div a strong {
-		line-height: 1.191;
-		/*25/21*/
-		font-size: 2.1rem;
-		color: #000;
-	}
-	.knowhow_inner .section_slider div a > span {
-		display: block;
-		background-color: #fcb54d;
-		width: 200px;
-		height: 50px;
-		color: #fff;
-		border-radius: 2px;
-		line-height: 50px;
-		font-size: 2.1rem;
-		margin: 16px auto 0;
-	}
-	.knowhow_inner .banner {
-		width: 40%;
-		/* 370 / 932*/
-		height: 253px;
-		position: absolute;
-		top: 503px;
-		right: 50%;
-		margin: 0 -25% 0 0;
-		background: none;
-		background-color: #76d9c5;
-		padding: 37px 41px 0 31px;
-		border-radius: 0;
-	}
-	.knowhow_inner .banner h3 {
-		font-size: 3.4rem;
-		margin-bottom: 0;
-		text-align: center;
-	}
-	.knowhow_inner .banner p {
-		width: 304px;
-		height: 50px;
-		font-size: 2.1rem;
-		line-height: 1.2;
-		text-align: center;
-		margin: 0 auto;
-	}
-	.knowhow_inner .banner span {
-		display: block;
-		background-color: #fff;
-		width: 200px;
-		height: 50px;
-		border-radius: 2px;
-		text-align: center;
-		line-height: 50px;
-		font-size: 21px;
-		color: #000;
-		margin: 14px auto 0;
-	}
-	.knowhow_inner .banner h3:after {
-		content: '';
-		display: block;
-		width: 60px;
-		height: 3px;
-		background-color: rgba(255, 255, 255, .7);
-		margin: 17px auto 11px;
-	}
-	.knowhow_inner .banner:after {
-		background: none;
-	}
-	.knowhow_inner .bannerWrap {
-		width: 34.98%;
-	}
-	.knowhow_inner .bannerWrap .banner {
-		position: static;
-		float: left;
-		width: 100%;
-		height: 507px;
-		background-image: none;
-		margin-bottom: 0;
-		background-color: #f4cb4d;
-		padding: 32px 0 0 20px;
-		border-radius: 5px 0 0 5px;
-	}
-	.knowhow_inner .bannerWrap .banner p {
-		font-size: 1.7rem;
-		line-height: 1.24;
-		margin-top: 0;
-		position: relative;
-		text-align: inherit;
-		width: auto;
-		height: auto;
-	}
-	.knowhow_inner .bannerWrap .banner h3 {
-		font-size: 3.4rem;
-		margin-bottom: 0;
-		text-align: inherit;
-	}
-	.knowhow_inner .bannerWrap .banner h3:after {
-		content: '';
-		width: 94.3%;
-		height: 2px;
-		background-color: #fff;
-		display: inline-block;
-		margin: 39px 0 30px 0;
-	}
-	.knowhow_inner .bannerWrap .banner p:after {
-		content: '';
-		width: 25px;
-		height: 47px;
-		display: inline-block;
-		background: url(../img/cjw-arrow-slider-right.png) no-repeat;
-		margin-right: 20px;
-		background-size: contain;
-		position: absolute;
-		right: 0;
-		top: 11px;
-	}
-	.knowhow_inner .bannerWrap .banner h3:last-child:after {
-		display: none;
-	}
+  /*freinds*/
+  .box_p {
+    display: none;
+  }
 
-	/*freinds*/
-	.box_p{display: none;}
+  #friends {
+    padding: 63px 0 91px;
+    background-color: transparent;
+    background: url(../img/cjw-bg-friends.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  .friends_inner {
+    width: 82.031%;
+    margin: 0 auto;
+  }
+  .friends_inner .title {
+    display: block;
+    width: 61%;
+    float: left;
+    height: 0;
+    background: none;
+    text-align: left;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+  .friends_inner .title h3 {
+    margin-bottom: 28px;
+  }
+  .friends_inner .title a {
+    width: 290px;
+    height: 78px;
+    border-width: 2px;
+    border-radius: 2px;
+    line-height: 74px;
+    text-align: center;
+  }
+  .friends_inner .title a.mobile {
+    display: none;
+  }
+  .friends_inner .title a.pc {
+    display: inline-block;
+  }
 
-	#friends {
-		padding: 63px 0 91px;
-		background-color: transparent;
-		background: url(../img/cjw-bg-friends.jpg) no-repeat;
-		background-size: cover;
-		background-position: center;
-		position: relative;
-	}
-	.friends_inner {
-		width: 82.031%;
-		margin: 0 auto;
-	}
-	.friends_inner .title {
-		display: block;
-		width: 61%;
-		float: left;
-		height: 0;
-		background: none;
-		text-align: left;
-		padding-top: 0;
-		margin-bottom: 0;
-	}
-	.friends_inner .title h3 {
-		margin-bottom: 28px;
-	}
-	.friends_inner .title a {
-		width: 290px;
-		height: 78px;
-		border-width: 2px;
-		border-radius: 2px;
-		line-height: 74px;
-		text-align: center;
-	}
-	.friends_inner .title a.mobile {
-		display: none;
-	}
-	.friends_inner .title a.pc {
-		display: inline-block;
-	}
+  .friends_inner .title a:after {
+    background-image: url(../img/cjw-plus-section-yellow.png);
+    margin-left: 12px;
+  }
+  .friends_inner .banner {
+    display: block;
+    position: relative;
+    margin: 0;
+  }
+  .friends_inner .friends_b {
+    float: left;
+    width: 61%;
+    height: 483px;
+    padding: 89px 91px 32px 32px;
+    margin-bottom: 0;
+    margin-top: 250px;
+  }
+  .friends_inner .friends_b .bg {
+    right: 22px;
+    bottom: 32px;
+    width: 166px;
+    height: 173px;
+  }
+  .friends_inner .friends_b .line {
+    width: 81%;
+    /**/
+    margin: 30px 0 22px;
+    background: rgba(255, 255, 255, 0.5);
+  }
+  .friends_inner .friends_b p {
+    margin-bottom: 33px;
+    font-size: 2.1rem;
+  }
+  .friends_inner .friends_b span:last-child {
+    width: 201px;
+    height: 51px;
+    border: none;
+    font-size: 2.1rem;
+    line-height: 51px;
+    background-color: #fff;
+    margin-bottom: 123px;
+  }
+  .friends_inner .banner:nth-of-type(2) {
+    width: 39%;
+    height: 250px;
+    float: right;
+    padding: 43px 1.866% 35px;
+    border-radius: 0;
+    background: none;
+    background-color: #02b5d6;
+    background-size: 110px;
+    color: #fff;
+    margin-bottom: auto;
+    text-align: center;
+  }
+  .friends_inner .banner:nth-of-type(2) h4 {
+    margin-bottom: 16px;
+    font-size: 1.7rem;
+  }
+  .friends_inner .banner:nth-of-type(2) p {
+    font-size: 2.1rem;
+  }
+  .friends_inner .banner:nth-of-type(2) p:after {
+    content: "바로가기";
+    display: block;
+    width: 200px;
+    height: 50px;
+    border-radius: 1px;
+    background-color: #fff;
+    color: #000;
+    font-size: 2.1rem;
+    text-align: center;
+    margin: 22px auto 0;
+    line-height: 50px;
+  }
+  .friends_inner .banner:nth-of-type(2):after {
+    display: none;
+  }
+  .friends_inner .box {
+    width: 39%;
+    margin: 0 auto;
+    float: right;
+  }
+  .friends_inner .bannerBox {
+    float: left;
+    width: 100%;
+    height: 242px;
+  }
+  .friends_inner .bannerBox:last-child {
+    margin-top: -1px;
+    border-left: 2px solid #cfcfcf;
+  }
+  .friends_inner .bannerBox h4 {
+    padding-top: 141px;
+    background: url(../img/cjw-icon-foodEditor.png) no-repeat top center;
+    background-size: 123px;
+    color: #000;
+    font-size: 2.1rem;
+    font-weight: normal;
+  }
+  .friends_inner .bannerBox:last-child h4 {
+    background-image: url(../img/cjw-icon-meetingTalk.png);
+    background-position: center 9px;
+    background-size: 106px;
+  }
 
-	.friends_inner .title a:after {
-		background-image: url(../img/cjw-plus-section-yellow.png);
-		margin-left: 12px;
-	}
-	.friends_inner .banner {
-		display: block;
-		position: relative;
-		margin: 0;
-	}
-	.friends_inner .friends_b {
-		float: left;
-		width: 61%;
-		/*/511/ 842*/
-		height: 483px;
-		padding: 89px 91px 32px 32px;
-		margin-bottom: 0;
-		margin-top: 250px;
-	}
-	.friends_inner .friends_b .bg {
-		right: 22px;
-		bottom: 32px;
-		width: 166px;
-		height: 173px;
-	}
-	.friends_inner .friends_b .line {
-		width: 81%;
-		/**/
-		margin: 30px 0 22px;
-		background: rgba(255, 255, 255, .5);
-	}
-	.friends_inner .friends_b p {
-		margin-bottom: 33px;
-		font-size: 2.1rem;
-	}
-	.friends_inner .friends_b span:last-child {
-		width: 201px;
-		height: 51px;
-		border: none;
-		font-size: 2.1rem;
-		line-height: 51px;
-		background-color: #fff;
-		margin-bottom: 123px;
-	}
-	.friends_inner .banner:nth-of-type(2) {
-		width: 39%;
-		height: 250px;
-		float: right;
-		padding: 43px 1.866% 35px;
-		border-radius: 0;
-		background: none;
-		background-color: #02b5d6;
-		background-size: 110px;
-		color: #fff;
-		margin-bottom: auto;
-		text-align: center;
-	}
-	.friends_inner .banner:nth-of-type(2) h4 {
-		margin-bottom: 16px;
-		font-size: 1.7rem;
-	}
-	.friends_inner .banner:nth-of-type(2) p {
-		font-size: 2.1rem;
-	}
-	.friends_inner .banner:nth-of-type(2) p:after {
-		content: '바로가기';
-		display: block;
-		width: 200px;
-		height: 50px;
-		border-radius: 1px;
-		background-color: #fff;
-		color: #000;
-		font-size: 2.1rem;
-		text-align: center;
-		margin: 22px auto 0;
-		line-height: 50px;
-	}
-	.friends_inner .banner:nth-of-type(2):after {
-		display: none;
-	}
-	.friends_inner .box {
-		width: 39%;
-		margin: 0 auto;
-		float: right;
-	}
-	.friends_inner .bannerBox {
-		float: left;
-		width: 100%;
-		height: 242px;
-	}
-	.friends_inner .bannerBox:last-child {
-		margin-top: -1px;
-		border-left: 2px solid #cfcfcf;
-	}
-	.friends_inner .bannerBox h4 {
-		padding-top: 141px;
-		background: url(../img/cjw-icon-foodEditor.png) no-repeat top center;
-		background-size: 123px;
-		color: #000;
-		font-size: 2.1rem;
-		font-weight: normal;
-	}
-	.friends_inner .bannerBox:last-child h4 {
-		background-image: url(../img/cjw-icon-meetingTalk.png);
-		background-position: center 9px;
-		background-size: 106px;
-	}
-
-	/*sns*/
-	#sns {
-		padding: 90px 0 138px;
-		position: relative;
-	}
-	.sns_inner {
-		width: 82.031%;
-		margin: 0 auto;
-	}
-	.sns_inner .title:before {
-		content: '';
-		display: block;
-		background: url(../img/cjw-bg-sns1.png) no-repeat;
-		width: 389px;
-		height: 332px;
-		position: absolute;
-		top: -50px;
-		right: 0;
-	}
-	.sns_inner .title {
-		margin-bottom: 39px;
-	}
-	.sns_inner .title h2 {
-		font-size: 5.9rem;
-		margin-bottom: 39px;
-	}
-	.sns_inner .title p {
-		font-size: 2.9rem;
-	}
-	.sns_inner .sns_link {
-		width: 66%;
-		margin-bottom: 70px;
-	}
-	.sns_inner .sns_link ul li {
-		float: left;
-		width: calc((100% - 57px)/5);
-	}
-	.sns_inner .sns_link ul li:last-child {
-		width: 56px;
-	}
-	.sns_inner .sns_link ul li a {
-		width: 56px;
-		height: 56px;
-	}
-	.sns_inner .sns_con {
-		width: 100%;
-	}
-	.sns_inner .sns_con:after {
-		content: '';
-		display: block;
-		background: url(../img/cjw-bg-sns2.png) no-repeat;
-		background-position: top right;
-		width: 427px;
-		height: 360px;
-		position: absolute;
-		bottom: 0px;
-		left: 0;
-	}
-	.sns_inner .sns_con a {
-		height: 244px;
-		border: none;
-	}
-	.sns_inner .sns_con a:last-child {
-		border-top: none;
-	}
-	.sns_inner .sns_con a span {
-		width: 40%;
-	}
-	.sns_inner .sns_con a .txt {
-		border-left: none;
-		padding: 30px 10px 0 25px;
-	}
-	.sns_inner .sns_con a:last-child .txt {
-		border-left: none;
-		border-right: none;
-		float: right;
-		margin-right: 25px;
-	}
-	.sns_inner .sns_con .txt h3 {
-		height: 36px;
-		line-height: 36px;
-		font-size: 1.8rem;
-	}
-	.sns_inner .sns_con .txt p {
-		left: 20px;
-		bottom: 46px;
-		font-size: 2rem;
-		line-height: 1.2;
-		/*24/20*/
-	}
-	/*footer*/
-	#footer {
-		border-top: none;
-		background-color: #fbfbfb;
-	}
-	.link_wrap {
-		display: block;
-		width: 100%;
-		height: 99px;
-		text-align: center;
-	}
-	.link_wrap > a {
-		height: 99px;
-		font-size: 2rem;
-		line-height: 99px;
-		padding-left: 0;
-		border-bottom: none;
-		text-align: center;
-		padding-right: 0px;
-		display: inline-flex;
-	}
-	.link_wrap ul.foot_btn {
-		display: inline-flex;
-	}
-	.link_wrap ul.foot_btn li,
-	.copy_wrap > span {
-		height: 99px;
-		line-height: 99px;
-		font-size: 1.8rem;
-		border-right: none;
-		border-bottom: none;
-		width: auto;
-	}
-	.link_wrap ul.foot_btn li a:before {
-		content: '|';
-		margin: 0 22px;
-		color: #000;
-	}
-	.link_wrap ul.foot_btn li:nth-child(odd) {
-		border-right: none;
-	}
-	.link_wrap ul.foot_btn li a {
-		padding-left: 0;
-		text-align: center;
-		color: #000;
-	}
-	.link_wrap ul.foot_btn li a.mobile {
-		display: none;
-	}
-	.copy_wrap{
-		border-top: 2px solid #e5e5e5;
-	}
-	.copy_wrap > span {
-		display: none;
-	}
-	.copy_wrap .copy {
-		display: block;
-		width: 82.031%;
-		margin: 43px auto 0;
-		text-align: left;
-		background-color: #fbfbfb;
-	}
-	.copy_wrap .copy > span {
-		width: 90px;
-		display: inline-flex;
-		margin-bottom: 0;
-		margin-right: 4%;
-		float: left;
-	}
-	.copy_wrap .copy p {
-		text-align: left;
-		float: left;
-		width: 60%;
-		margin-top: 28px;
-		margin-right: 6%;
-	}
-	.copy_wrap .copy p > span {
-		font-size: 1.3rem;
-		line-height: 2;
-		display: inline-block;
-	}
-	.copy_wrap .copy p > span:nth-child(4):before,
-	.copy_wrap .copy p > span:nth-child(6):before {
-		display: none;
-	}
-	.copy_wrap .copy p > span:last-child {
-		display: inline-block;
-	}
-	.copy_wrap .copy p > span:first-child:after {
-		display: none;
-	}
-	.copy_wrap .copy p > span:first-child:before {
-		display: none;
-	}
-	.copy_wrap .copy p > span:before {
-		content: '|';
-		margin: 0 7px;
-		color: #666;
-	}
-	.copy_wrap .copy > div:nth-of-type(1) {
-		width: 64px;
-		height: 85px;
-		background: url(../img/cjw-logo-wa.png)no-repeat;
-		background-position: center;
-		background-size: cover;
-		float: left;
-		margin-right: 4%;
-		margin-top: 20px;
-
-	}
-	.copy_wrap .copy > div:nth-of-type(2) {
-		width: 64px;
-		height: 85px;
-		background: url(../img/cjw-logo-ccm.png)no-repeat;
-		background-position: center;
-		background-size: contain;
-		float: left;
-		margin-top: 20px;
-
-	}
-	.copy_wrap .copy p:last-child {
-		height: 64px;
-		line-height: 2;
-		font-size: 1.2rem;
-		margin-top: 0;
-		background-color: transparent;
-		color: #666;
-		display: block;
-		text-align: left;
-	}
+  /*sns*/
+  #sns {
+    padding: 90px 0 138px;
+    position: relative;
+  }
+  .sns_inner {
+    width: 82.031%;
+    margin: 0 auto;
+  }
+  .sns_inner .title:before {
+    content: "";
+    display: block;
+    background: url(../img/cjw-bg-sns1.png) no-repeat;
+    width: 389px;
+    height: 332px;
+    position: absolute;
+    top: -50px;
+    right: 0;
+  }
+  .sns_inner .title {
+    margin-bottom: 39px;
+  }
+  .sns_inner .title h2 {
+    font-size: 5.9rem;
+    margin-bottom: 39px;
+  }
+  .sns_inner .title p {
+    font-size: 2.9rem;
+  }
+  .sns_inner .sns_link {
+    width: 66%;
+    margin-bottom: 70px;
+  }
+  .sns_inner .sns_link ul li {
+    float: left;
+    width: calc((100% - 57px) / 5);
+  }
+  .sns_inner .sns_link ul li:last-child {
+    width: 56px;
+  }
+  .sns_inner .sns_link ul li a {
+    width: 56px;
+    height: 56px;
+  }
+  .sns_inner .sns_con {
+    width: 100%;
+  }
+  .sns_inner .sns_con:after {
+    content: "";
+    display: block;
+    background: url(../img/cjw-bg-sns2.png) no-repeat;
+    background-position: top right;
+    width: 427px;
+    height: 360px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+  }
+  .sns_inner .sns_con a {
+    height: 244px;
+    border: none;
+  }
+  .sns_inner .sns_con a:last-child {
+    border-top: none;
+  }
+  .sns_inner .sns_con a span {
+    width: 40%;
+  }
+  .sns_inner .sns_con a .txt {
+    border-left: none;
+    padding: 30px 10px 0 25px;
+  }
+  .sns_inner .sns_con a:last-child .txt {
+    border-left: none;
+    border-right: none;
+    float: right;
+    margin-right: 25px;
+  }
+  .sns_inner .sns_con .txt h3 {
+    height: 36px;
+    line-height: 36px;
+    font-size: 1.8rem;
+  }
+  .sns_inner .sns_con .txt p {
+    left: 20px;
+    bottom: 46px;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  /*footer*/
+  #footer {
+    border-top: none;
+    background-color: #fbfbfb;
+  }
+  .link_wrap {
+    display: block;
+    width: 100%;
+    height: 99px;
+    text-align: center;
+  }
+  .link_wrap > a {
+    height: 99px;
+    font-size: 2rem;
+    line-height: 99px;
+    padding-left: 0;
+    border-bottom: none;
+    text-align: center;
+    padding-right: 0px;
+    display: inline-flex;
+  }
+  .link_wrap ul.foot_btn {
+    display: inline-flex;
+  }
+  .link_wrap ul.foot_btn li,
+  .copy_wrap > span {
+    height: 99px;
+    line-height: 99px;
+    font-size: 1.8rem;
+    border-right: none;
+    border-bottom: none;
+    width: auto;
+  }
+  .link_wrap ul.foot_btn li a:before {
+    content: "|";
+    margin: 0 22px;
+    color: #000;
+  }
+  .link_wrap ul.foot_btn li:nth-child(odd) {
+    border-right: none;
+  }
+  .link_wrap ul.foot_btn li a {
+    padding-left: 0;
+    text-align: center;
+    color: #000;
+  }
+  .link_wrap ul.foot_btn li a.mobile {
+    display: none;
+  }
+  .copy_wrap {
+    border-top: 2px solid #e5e5e5;
+  }
+  .copy_wrap > span {
+    display: none;
+  }
+  .copy_wrap .copy {
+    display: block;
+    width: 82.031%;
+    margin: 43px auto 0;
+    text-align: left;
+    background-color: #fbfbfb;
+  }
+  .copy_wrap .copy > span {
+    width: 90px;
+    display: inline-flex;
+    margin-bottom: 0;
+    margin-right: 4%;
+    float: left;
+  }
+  .copy_wrap .copy p {
+    text-align: left;
+    float: left;
+    width: 60%;
+    margin-top: 28px;
+    margin-right: 6%;
+  }
+  .copy_wrap .copy p > span {
+    font-size: 1.3rem;
+    line-height: 2;
+    display: inline-block;
+  }
+  .copy_wrap .copy p > span:nth-child(4):before,
+  .copy_wrap .copy p > span:nth-child(6):before {
+    display: none;
+  }
+  .copy_wrap .copy p > span:last-child {
+    display: inline-block;
+  }
+  .copy_wrap .copy p > span:first-child:after {
+    display: none;
+  }
+  .copy_wrap .copy p > span:first-child:before {
+    display: none;
+  }
+  .copy_wrap .copy p > span:before {
+    content: "|";
+    margin: 0 7px;
+    color: #666;
+  }
+  .copy_wrap .copy > div:nth-of-type(1) {
+    width: 64px;
+    height: 85px;
+    background: url(../img/cjw-logo-wa.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    float: left;
+    margin-right: 4%;
+    margin-top: 20px;
+  }
+  .copy_wrap .copy > div:nth-of-type(2) {
+    width: 64px;
+    height: 85px;
+    background: url(../img/cjw-logo-ccm.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    float: left;
+    margin-top: 20px;
+  }
+  .copy_wrap .copy p:last-child {
+    height: 64px;
+    line-height: 2;
+    font-size: 1.2rem;
+    margin-top: 0;
+    background-color: transparent;
+    color: #666;
+    display: block;
+    text-align: left;
+  }
 }
-/*----------------------------------------------------------------------*/
 
-@media all and (min-width:1920px) {
-	.pc_only{
-		display: block;
-	}
-	.main_prevBtn.pc {
-		display: block;
-	}
-	.main_nextBtn.pc {
-		display: block;
-	}
-	.story_prevBtn.pc {
-		display: block;
-	}
-	.story_nextBtn.pc {
-		display: block;
-	}
-	#header {
-		height: 168px;
-		position: relative;
-	}
-	#header.on {
-		height: 99px;
-		border-bottom: 1px solid #cfcfcf;
-	}
-	#header.on .nav_inner > div a:nth-child(1) {
-		width: 140px;
-		height: 48px;
-		margin-top: 23px;
-	}
-	#header.on .nav_inner .gnb > li > a {
-		height: 100px;
-		line-height: 100px;
-		font-size: 1.8rem;
-	}
-	.header_top {
-		width: 66.46%;
-		height: 67px;
-	}
-	.sch_wrap input {
-		width: 186px;
-		height: 36px;
-		line-height: 36px;
-	}
-	.sch_wrap .btn_sch {
-		width: 17px;
-		height: 17px;
-	}
-	.t_menu li a {
-		font-size: 1.6rem;
-	}
-	.nav_inner {
-		width: 66.46%;
-	}
-	.nav_inner > div a:nth-child(1) {
-		width: 156px;
-		height: 50px;
-		margin-top: 26px;
-	}
-	.nav_inner .gnb > li > a {
-		height: 100px;
-		line-height: 100px;
-		font-size: 1.8rem;
-	}
-	.nav_inner .sub_wrap {
-		top: 166px;
-	}
-	.nav_inner .sub_wrap_inner {
-		width: 66.46%;
-	}
+@media all and (min-width: 1920px) {
+  .pc_only {
+    display: block;
+  }
+  .slider{
+	z-index: -1; 
+  }
+  .main_prevBtn.pc {
+    display: block;
+  }
+  .main_nextBtn.pc {
+    display: block;
+  }
+  .story_prevBtn.pc {
+    display: block;
+  }
+  .story_nextBtn.pc {
+    display: block;
+  }
+  #header {
+    height: 168px;
+    position: relative;
+  }
+  #header.on {
+    height: 99px;
+    border-bottom: 1px solid #cfcfcf;
+  }
+  #header.on .nav_inner > div a:nth-child(1) {
+    width: 140px;
+    height: 48px;
+    margin-top: 23px;
+  }
+  #header.on .nav_inner .gnb > li > a {
+    height: 100px;
+    line-height: 100px;
+    font-size: 1.8rem;
+  }
+  .header_top {
+    width: 66.46%;
+    height: 67px;
+  }
+  .sch_wrap input {
+    width: 186px;
+    height: 36px;
+    line-height: 36px;
+  }
+  .sch_wrap .btn_sch {
+    width: 17px;
+    height: 17px;
+  }
+  .t_menu li a {
+    font-size: 1.6rem;
+  }
+  .nav_inner {
+    width: 66.46%;
+  }
+  .nav_inner > div a:nth-child(1) {
+    width: 156px;
+    height: 50px;
+    margin-top: 26px;
+  }
+  .nav_inner .gnb > li > a {
+    height: 100px;
+    line-height: 100px;
+    font-size: 1.8rem;
+  }
+  .nav_inner .sub_wrap {
+    top: 166px;
+  }
+  .nav_inner .sub_wrap_inner {
+    width: 66.46%;
+  }
 
-	#header.on .nav_inner .sub_wrap {
-		top: 97px;
-	}
-	.slider {
-		height: 900px;
-	}
-	.img_wrap {
-		height: 900px;
-		padding-top: 228px;
-	}
-	.img_wrap > span {
-		font-size: 5.8rem;
-	}
-	.img_wrap h2 {
-		font-size: 12rem;
-		margin-top: 26px;
-		margin-bottom: 44px;
-	}
-	.main_slider_controller {
-		display: none;
-	}
-	.main_prevBtn {
-		position: absolute;
-		left: 50px;
-		top: 50%;
-		transform: translateY(-50%);
-		text-indent: -9999px;
-		z-index: 100;
-	}
-	.main_prevBtn a {
-		display: block;
-		width: 36px;
-		height: 68px;
-		background: url(../img/cjw-arrow-slider-left.png) no-repeat;
-		background-size: contain;
-		background-position: center;
-	}
-	.main_nextBtn {
-		position: absolute;
-		right: 50px;
-		top: 50%;
-		transform: translateY(-50%);
-		text-indent: -9999px;
-		z-index: 100;
-	}
-	.main_nextBtn a {
-		display: block;
-		width: 36px;
-		height: 68px;
-		background: url(../img/cjw-arrow-slider-right.png) no-repeat;
-		background-size: contain;
-		background-position: center;
-	}
-	.img_wrap p {
-		font-size: 3rem;
-		line-height: 1.6;
-		margin-bottom: 79px;
-	}
-	.img_wrap a {
-		width: 300px;
-		border-radius: 5px;
-		line-height: 73px;
-		border-width: 3px;
-		font-size: 2.5rem;
-	}
-	.mouse_mov {
-		position: absolute;
-		left: 50%;
-		bottom: 50px;
-		transform: translateX(-50%);
-		display: block;
-		width: 34px;
-		height: 76px;
-		background: url(../img/cjw-icon-mouse.png) no-repeat;
-		background-size: contain;
-		background-position: center;
-		z-index: 100;
-	}
-	#story {
-		padding: 158px 0 165px;
-		background: url(../img/cjw-bg-product.png)no-repeat;
-		background-size: contain;
-		background-position: bottom;
-		position: relative;
-	}
-	.story_prevBtn {
-		display: inline-block;
-		width: 36px;
-		height: 68px;
-		position: absolute;
-		left: 5%;
-		top: 50%;
-		transform: translateY(-50%);
-		text-indent: -9999px;
-	}
-	.story_prevBtn a {
-		width: 100%;
-		height: 100%;
-		display: block;
-		background: url(../img/cjw-arrow-slider-left-grey.png)no-repeat;
-		background-size: contain;
-	}
-	.story_nextBtn {
-		display: inline-block;
-		width: 36px;
-		height: 68px;
-		position: absolute;
-		right: 5%;
-		top: 50%;
-		transform: translateY(-50%);
-		text-indent: -9999px;
-	}
-	.story_nextBtn a {
-		width: 100%;
-		height: 100%;
-		display: block;
-		background: url(../img/cjw-arrow-slider-right-grey.png)no-repeat;
-		background-size: contain;
-	}
-	.story_inner {
-		width: 66.46%;
-	}
-	.story_inner article:first-child ~ article {
-		display: block;
-	}
-	.story_inner article {
-		width: 100%;
-		height: 565px;
-		border-width: 1px;
-		padding: 35px;
-		background-size: 400px;
-		display: block;
-		box-sizing: border-box;
-	}
-	.story_inner article a {
-		position: absolute;
-		left: auto;
-		top: 278px;
-	}
-	.story_inner article p {
-		margin: 24px 0 0;
-	}
-	#story .story_inner article:nth-child(2) {
-		margin-right: 4.389%;
-		display: block;
-	}	
-	.story_slider_controller{
-		bottom: 75px;
-	}
-	#cast {
-		position: relative;
-		background-attachment: fixed;
-		padding: 178px 0px 0px;
-		height: 1082px;
-	}
-	.cast_inner {
-		width: 66.46%;
-	}
-	.cast_inner .title h2 {
-		font-size: 8rem;
-	}
-	.cast_inner .title a{
-		width: 330px;
-		padding-left: 20px;
-		text-align: left;
-		font-size: 2.2rem;
-	}
-	.cast_inner .title a:after{
-		margin-left: 30px;
-	}
-	.cast_inner .section_slider {
-		width: 47%;
-		height: 897px;
-		margin-top: 7px;
-		border-radius: 0;
-	}
-	.cast_inner .section_slider a p {
-		font-size: 1.6rem;
-		line-height: 1.3;
-		margin: 10px 0 23px;
-	}
-	.cast_inner .section_slider a span {
-		width: 150px;
-		height: 40px;
-		line-height: 40px;
-		font-size: 1.6rem;
-		border-radius: 3px;
-	}
-	.cast_inner .section_slider div > span {
-		height: 594px;
-	}
-	.cast_inner .title h2 {
-		margin-bottom: 35px;
-	}
-	.cast_inner .banner {
-		position: absolute;
-		left: 0;
-		top: 483px;
-		width: 35%;
-		height: 299px;
-		padding: 66px 67px 0px 354px;
-		margin: 0;
-		border-radius: 0;
-	}
-	.cast_inner .banner p {
-		font-size: 1.8rem;
-		line-height: 1.3;
-	}
-	.cast_inner .banner span {
-		width: 150px;
-		height: 40px;
-		margin-top: 32px;
-		font-size: 1.6rem;
-		line-height: 40px;
-		border-radius: 3px;
-	}
-	.cast_inner .banner:after {
-		content: '';
-		display: block;
-		width: 100%;
-		height: 300px;
-		background: #f4f4f4;
-		position: absolute;
-		left: 0;
-		top: 327px;
-		pointer-events: none;
-	}
-	.cast_inner .banner:before {
-		content: '';
-		display: inline-block;
-		background: url(../img/cjw-icon-foodLab.png)no-repeat;
-		width: 220px;
-		height: 192px;
-		background-size: 100%;
-		position: absolute;
-		top: 48px;
-		left: 13%;
-	}
-	.cast_inner .banner:nth-of-type(2) {
-		display: none
-	}
-	.banner_wrap.pc {
-		display: block;
-		position: absolute;
-		left: 34.95%;
-		top: 482px;
-		width: 17%;
-		height: auto;
-	}
-	.banner_wrap > .befor_banner:first-child {
-		display: inline-block;
-		width: 100%;
-		height: 300px;
-		background: url(../img/cjw-food-school.png) no-repeat;
-		background-size: cover;
-		background-position: center;
-	}
-	.banner_wrap > .befor_banner:last-child {
-		width: 100%;
-		height: 300px;
-		background-color: #02b5d6;
-		display: block;
-		padding: 39px 30px 0px;
-		text-align: center;
-	}
-	.banner_wrap .befor_banner:last-child h3:after {
-		content: "";
-		width: 60px;
-		height: 3px;
-		background-color: rgba(0, 181, 216, .5);
-		display: block;
-		margin: 16px auto 14px;
-	}
-	.banner_wrap .befor_banner:last-child p {
-		display: inline-block;
-		margin-bottom: 0;
-		font-size: 1.8rem;
-		color: #fff;
-		line-height: 1.3;
-	}
-	.banner_wrap .befor_banner:last-child h3 {
-		color: #fff;
-		font-weight: normal;
-		margin-bottom: 0;
-		font-size: 3.4rem;
-	}
-	.banner_wrap .befor_banner:last-child h3:after {
-		content: '';
-		display: block;
-		width: 60px;
-		height: 3px;
-		background-color: rgba(255, 255, 255, .7);
-		margin: 17px auto 11px;
-	}
-	.banner_wrap .befor_banner:last-child span {
-		width: 150px;
-		height: 40px;
-		margin: 22px auto 0;
-		color: #000;
-		font-size: 1.6rem;
-		text-align: center;
-		line-height: 40px;
-		border-radius: 3px;
-		background-color: #fff;
-	}
-	#knowhow {
-		position: relative;
-		height: 1033px;
-		background: none;
-		background-color: #f4f4f4;
-		padding: 0 0 135px 0;
-	}
-	#knowhow:after {
-		content: '';
-		display: block;
-		background: url(../img/cjw-bg-foodCast.jpg)no-repeat;
-		background-size: cover;
-		background-position: right 1px;
-		background-attachment: fixed;
-		position: absolute;
-		top: 0;
-		right: 0;
-		height: 290px;
-		width: 65.05%;
-	}
-	#knowhow:before {
-		content: '';
-		display: block;
-		position: absolute;
-		left: 9%;
-		bottom: 0;
-		width: 33%;
-		height: 600px;
-		background: url(../img/cjw-bg-foodKnowhow.jpg)no-repeat;
-		background-size: auto;
-	}
-	.knowhow_inner {
-		width: 66.46%;
-		height: 1033px;
-		margin: 0 auto;
-	}
-	.knowhow_inner .title {
-		position: absolute;
-		right: 0;
-		width: 66.65%;
-		height: 300px;
-		padding-top: 56px;
-		padding-right: 15px;
-		text-align: right;
-		z-index: 20;
-	}
-	.knowhow_inner .title a {
-		position: absolute;
-		right: 15px;
-		width: 330px;
-		padding-left: 20px;
-		text-align: left;
-		font-size: 2.2rem;
-	}
-	.knowhow_inner .title a:after{
-		margin-left: 30px;
-	}
-	.knowhow_inner h2 {
-		color: #fff;
-		font-size: 8rem;
-	}
-	.knowhow_inner .section_slider {
-		position: absolute;
-		left: 27.4%;
-		bottom: 146px;
-		background-color: transparent;
-		height: auto;
-		width: 92%;
-	}
-	.knowhow_inner .section_slider div {
-		height: 598px;
-	}
-	.knowhow_inner .section_slider div a {
-		width: 32.5%;
-		height: 311px;
-		padding: 0;
-		float: left;
-		text-align: center;
-		background-color: #fff;
-	}
-	.knowhow_inner .section_slider div a h3:before {
-		content: '식탁이 필요한 풍경';
-		display: block;
-		font-size: 1.8rem;
-		color: #fcb54d;
-		text-align: left;
-		padding: 0 0 15px 16%;
-	}
-	.knowhow_inner .section_slider div > span {
-		display: inline-block;
-		width: 74.5%;
-		height: 313px;
-		position: absolute;
-		right: -7%;
-		top: 0;
-		border: none;
-	}
-	.knowhow_inner .section_slider div a > span {
-		width: 150px;
-		height: 40px;
-		margin: 32px auto 14px;
-		font-size: 1.6rem;
-		line-height: 40px;
-		border-radius: 3px;
-	}
-	.knowhow_inner .section_slider div a strong {
-		display: block;
-		font-size: 1.8rem;
-	}
-	.knowhow_inner .bannerWrap {
-		width: 27.4%;
-		position: absolute;
-		left: 0%
-	}
-	.knowhow_inner .bannerWrap .banner {
-		height: 600px;
-	}
-	.knowhow_inner .bannerWrap .banner h3:after {
-		margin: 53px 0 28px 0;
-		width: 94.3%;
-		width: 94.3%;
-	}
-	.knowhow_inner .banner {
-		width: 50%;
-		height: 300px;
-		position: absolute;
-		bottom: 133px;
-		left: 27.4%;
-		top: auto;
-		right: auto;
-		padding: 55px 266px 20px 24px;
-	}
-	.knowhow_inner .banner p {
-		font-size: 1.8rem;
-		;
-	}
-	.knowhow_inner .banner span {
-		width: 150px;
-		height: 40px;
-		margin-top: 32px;
-		font-size: 1.6rem;
-		line-height: 40px;
-		border-radius: 3px;
-	}
-	.knowhow_inner .bannerWrap .banner h3 {
-		font-size: 3.5rem;
-	}
-	.knowhow_inner .bannerWrap .banner p {
-		font-size: 1.6rem;
-		line-height: 1.24;
-		padding-bottom: 10px;
-	}
-	.knowhow_inner > a.banner:before {
-		content: '';
-		display: block;
-		position: absolute;
-		right: 6%;
-		top: 36px;
-		width: 223px;
-		height: 202px;
-		background: url(../img/cjw-icon-cjwRecipe.png)no-repeat;
-	}
-	.knowhow_inner .section_slider > div:after {
-		display: inline-block;
-		width: 24.5%;
-		height: 299px;
-		position: absolute;
-		bottom: -13px;
-		left: 54.3%;
-	}
-	#friends {
-		padding: 156px 0 119px;
-		height: 1170px;
-		background-attachment: fixed;
-	}
-	.friends_inner {
-		width: 66.46%;
-		height: 100%;
-		position: relative;
-	}
-	.friends_inner .title{
-		width: auto;
-		height: auto;
-	}
+  #header.on .nav_inner .sub_wrap {
+    top: 97px;
+  }
+  .slider {
+    height: 900px;
+	z-index: auto;
+  }
+  .img_wrap {
+    height: 900px;
+    padding-top: 228px;
+  }
+  .img_wrap > span {
+    font-size: 4rem;
+  }
+  .img_wrap h2 {
+    font-size: 10rem;
+    margin-top: 26px;
+    margin-bottom: 44px;
+  }
+  .main_slider_controller {
+    display: none;
+  }
+  .main_prevBtn {
+	   position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-indent: -9999px;
+    z-index: 100;
+    display: block;
+    width: 36px;
+    height: 68px;
+    background: url(../img/cjw-arrow-slider-left.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .main_nextBtn {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-indent: -9999px;
+    z-index: 100;
+	display: block;
+    width: 36px;
+    height: 68px;
+    background: url(../img/cjw-arrow-slider-right.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .img_wrap p {
+    font-size: 2.6rem;
+    line-height: 1.6;
+    margin-bottom: 79px;
+	z-index: 100;
+  }
+  .img_wrap a {
+    width: 300px;
+    border-radius: 5px;
+    line-height: 73px;
+    border-width: 3px;
+    font-size: 2.5rem;
+  }
+  .mouse_mov {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    display: block;
+    width: 34px;
+    height: 76px;
+    background: url(../img/cjw-icon-mouse.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 100;
+  }
+  #story {
+    padding: 158px 0 165px;
+    background: url(../img/cjw-bg-product.png) no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    position: relative;
+  }
+  .story_prevBtn {
+    display: inline-block;
+    width: 36px;
+    height: 68px;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-indent: -9999px;
+  }
+  .story_prevBtn a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url(../img/cjw-arrow-slider-left-grey.png) no-repeat;
+    background-size: contain;
+  }
+  .story_nextBtn {
+    display: inline-block;
+    width: 36px;
+    height: 68px;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-indent: -9999px;
+  }
+  .story_nextBtn a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url(../img/cjw-arrow-slider-right-grey.png) no-repeat;
+    background-size: contain;
+  }
+  .story_inner {
+    width: 66.46%;
+  }
+  .story_inner article:first-child ~ article {
+    display: block;
+  }
+  .story_inner article {
+    width: 100%;
+    height: 565px;
+    border-width: 1px;
+    padding: 35px;
+    background-size: 400px;
+    display: block;
+    box-sizing: border-box;
+  }
+  .story_inner article a {
+    position: absolute;
+    left: auto;
+    top: 278px;
+  }
+  .story_inner article p {
+    margin: 24px 0 0;
+  }
+  #story .story_inner article:nth-child(2) {
+    margin-right: 4.389%;
+    display: block;
+  }
+  .story_slider_controller {
+    bottom: 75px;
+  }
+  #cast {
+    position: relative;
+    background-attachment: fixed;
+    padding: 178px 0px 0px;
+    height: 1082px;
+  }
+  .cast_inner {
+    width: 66.46%;
+  }
+  .cast_inner .title h2 {
+    font-size: 8rem;
+  }
+  .cast_inner .title a {
+    width: 330px;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 2.2rem;
+  }
+  .cast_inner .title a:after {
+    margin-left: 30px;
+  }
+  .cast_inner .section_slider {
+    width: 47%;
+    height: 897px;
+    margin-top: 7px;
+    border-radius: 0;
+  }
+  .cast_inner .section_slider a p {
+    font-size: 1.6rem;
+    line-height: 1.3;
+    margin: 10px 0 23px;
+  }
+  .cast_inner .section_slider a span {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.6rem;
+    border-radius: 3px;
+  }
+  .cast_inner .section_slider div > span {
+    height: 594px;
+  }
+  .cast_inner .title h2 {
+    margin-bottom: 35px;
+  }
+  .cast_inner .banner {
+    position: absolute;
+    left: 0;
+    top: 483px;
+    width: 35%;
+    height: 299px;
+    padding: 66px 67px 0px 354px;
+    margin: 0;
+    border-radius: 0;
+  }
+  .cast_inner .banner p {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+  .cast_inner .banner span {
+    width: 150px;
+    height: 40px;
+    margin-top: 32px;
+    font-size: 1.6rem;
+    line-height: 40px;
+    border-radius: 3px;
+  }
+  .cast_inner .banner:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 300px;
+    background: #f4f4f4;
+    position: absolute;
+    left: 0;
+    top: 327px;
+    pointer-events: none;
+  }
+  .cast_inner .banner:before {
+    content: "";
+    display: inline-block;
+    background: url(../img/cjw-icon-foodLab.png) no-repeat;
+    width: 220px;
+    height: 192px;
+    background-size: 100%;
+    position: absolute;
+    top: 48px;
+    left: 13%;
+  }
+  .cast_inner .banner:nth-of-type(2) {
+    display: none;
+  }
+  .banner_wrap.pc {
+    display: block;
+    position: absolute;
+    left: 34.95%;
+    top: 482px;
+    width: 17%;
+    height: auto;
+  }
+  .banner_wrap > .befor_banner:first-child {
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    background: url(../img/cjw-food-school.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .banner_wrap > .befor_banner:last-child {
+    width: 100%;
+    height: 300px;
+    background-color: #02b5d6;
+    display: block;
+    padding: 39px 30px 0px;
+    text-align: center;
+  }
+  .banner_wrap .befor_banner:last-child h3:after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: rgba(0, 181, 216, 0.5);
+    display: block;
+    margin: 16px auto 14px;
+  }
+  .banner_wrap .befor_banner:last-child p {
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 1.8rem;
+    color: #fff;
+    line-height: 1.3;
+  }
+  .banner_wrap .befor_banner:last-child h3 {
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 0;
+    font-size: 3.4rem;
+  }
+  .banner_wrap .befor_banner:last-child h3:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 17px auto 11px;
+  }
+  .banner_wrap .befor_banner:last-child span {
+    width: 150px;
+    height: 40px;
+    margin: 22px auto 0;
+    color: #000;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 3px;
+    background-color: #fff;
+  }
+  #knowhow {
+    position: relative;
+    height: 1033px;
+    background: none;
+    background-color: #f4f4f4;
+    padding: 0 0 135px 0;
+  }
+  #knowhow:after {
+    content: "";
+    display: block;
+    background: url(../img/cjw-bg-foodCast.jpg) no-repeat;
+    background-size: cover;
+    background-position: right 1px;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 290px;
+    width: 65.05%;
+  }
+  #knowhow:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 9%;
+    bottom: 0;
+    width: 33%;
+    height: 600px;
+    background: url(../img/cjw-bg-foodKnowhow.jpg) no-repeat;
+    background-size: auto;
+  }
+  .knowhow_inner {
+    width: 66.46%;
+    height: 1033px;
+    margin: 0 auto;
+  }
+  .knowhow_inner .title {
+    position: absolute;
+    right: 0;
+    width: 66.65%;
+    height: 300px;
+    padding-top: 56px;
+    padding-right: 15px;
+    text-align: right;
+    z-index: 20;
+  }
+  .knowhow_inner .title a {
+    position: absolute;
+    right: 15px;
+    width: 330px;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 2.2rem;
+  }
+  .knowhow_inner .title a:after {
+    margin-left: 30px;
+  }
+  .knowhow_inner h2 {
+    color: #fff;
+    font-size: 8rem;
+  }
+  .knowhow_inner .section_slider {
+    position: absolute;
+    left: 27.4%;
+    bottom: 146px;
+    background-color: transparent;
+    height: auto;
+    width: 92%;
+  }
+  .knowhow_inner .section_slider div {
+    height: 598px;
+  }
+  .knowhow_inner .section_slider div a {
+    width: 32.5%;
+    height: 311px;
+    padding: 0;
+    float: left;
+    text-align: center;
+    background-color: #fff;
+  }
+  .knowhow_inner .section_slider div a h3:before {
+    content: "식탁이 필요한 풍경";
+    display: block;
+    font-size: 1.8rem;
+    color: #fcb54d;
+    text-align: left;
+    padding: 0 0 15px 16%;
+  }
+  .knowhow_inner .section_slider div > span {
+    display: inline-block;
+    width: 74.5%;
+    height: 313px;
+    position: absolute;
+    right: -7%;
+    top: 0;
+    border: none;
+  }
+  .knowhow_inner .section_slider div a > span {
+    width: 150px;
+    height: 40px;
+    margin: 32px auto 14px;
+    font-size: 1.6rem;
+    line-height: 40px;
+    border-radius: 3px;
+  }
+  .knowhow_inner .section_slider div a strong {
+    display: block;
+    font-size: 1.8rem;
+  }
+  .knowhow_inner .bannerWrap {
+    width: 27.4%;
+    position: absolute;
+    left: 0%;
+  }
+  .knowhow_inner .bannerWrap .banner {
+    height: 600px;
+  }
+  .knowhow_inner .bannerWrap .banner h3:after {
+    margin: 53px 0 28px 0;
+    width: 94.3%;
+    width: 94.3%;
+  }
+  .knowhow_inner .banner {
+    width: 50%;
+    height: 300px;
+    position: absolute;
+    bottom: 133px;
+    left: 27.4%;
+    top: auto;
+    right: auto;
+    padding: 55px 266px 20px 24px;
+  }
+  .knowhow_inner .banner p {
+    font-size: 1.8rem;
+  }
+  .knowhow_inner .banner span {
+    width: 150px;
+    height: 40px;
+    margin-top: 32px;
+    font-size: 1.6rem;
+    line-height: 40px;
+    border-radius: 3px;
+  }
+  .knowhow_inner .bannerWrap .banner h3 {
+    font-size: 3.5rem;
+  }
+  .knowhow_inner .bannerWrap .banner p {
+    font-size: 1.6rem;
+    line-height: 1.24;
+    padding-bottom: 10px;
+  }
+  .knowhow_inner > a.banner:before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 6%;
+    top: 36px;
+    width: 223px;
+    height: 202px;
+    background: url(../img/cjw-icon-cjwRecipe.png) no-repeat;
+  }
+  .knowhow_inner .section_slider > div:after {
+    display: inline-block;
+    width: 24.5%;
+    height: 299px;
+    position: absolute;
+    bottom: -13px;
+    left: 54.3%;
+  }
+  #friends {
+    padding: 156px 0 119px;
+    height: 1170px;
+    background-attachment: fixed;
+  }
+  .friends_inner {
+    width: 66.46%;
+    height: 100%;
+    position: relative;
+  }
+  .friends_inner .title {
+    width: auto;
+    height: auto;
+  }
 
-	.friends_inner .title h3 {
-		font-size: 8rem;
-	}
-	.friends_inner .title a{
-		width: 330px;
-		padding-left: 20px;
-		text-align: left;
-		font-size: 2.2rem;
-	}
-	.friends_inner .title a:after{
-		margin-left: 30px;
-	}
-	.friends_inner .friends_b{
-		width: 50%;
-		height: 597px;
-		position: absolute;
-		left: 0;
-		top: 300px;
-		margin-top:0;
-	}
-	.friends_inner .banner:nth-of-type(2){
-		width: 50%;
-		height: 300px;
-		position: relative;
-		padding: 34px 4.3% 48px;
-		border-radius: 4px 4px 0 0;
-		text-align: left;
-	}
-	.friends_inner .banner:nth-of-type(2)::after{
-		content: '';
-		display: block;
-		width: 200px;
-		height: 196px;
-		margin-top: auto;
-		top: 62px;
-		right: 54px;
-		background: url(../img/cjw-icon-friendsPanel.png) no-repeat; 
-		background-size: contain;
-	}
-	.friends_inner .banner:nth-of-type(2) p::after{
-		margin: 56px 0 0;
-	}
-	.friends_inner .banner:nth-of-type(2) h4{
-		color: rgba(255,255,255,.7);
-	}
-	.friends_inner .banner:nth-of-type(2) p{
-		display: inline-block;
-		font-size: 2.2rem;
-		line-height: 26px;
-	}
-	.friends_inner .banner:nth-of-type(2) p:after{
-		width: 150px;
-		height: 40px;
-		border-radius: 2px;
-		font-size: 1.6rem;
-		line-height: 40px;
-	}
-	.friends_inner .friends_b span:last-child{
-		width: 150px;
-		height: 40px;
-		border-radius: 2px;
-		line-height: 40px;
-		font-size: 1.6rem;
-	}
-	.friends_inner .friends_b p{
-		font-size: 2.2rem;
-		line-height: 1.18;
-	}
-	.friends_inner .friends_b .bg{
-		width: 224px;
-		height: 232px;
-	}
-	.friends_inner .box_p{
-		display: block;
-		width: 50%;
-		position: absolute;
-		right: 0;
-		top: 300px;
-	}
-	.friends_inner .box_p a{
-		display: inline-block;
-		width: 50%;
-		height: 298.5px;
-		background-color: #fff;
-		padding-top: 48px;
-		text-align: center;
-	}
-	.friends_inner .box_p a:last-child{
-		float: right;
-	}
-	.friends_inner .box_p h4{
-		background: url(../img/cjw-icon-foodEditor.png) no-repeat top center;
-		background-size: 130px;
-		margin-bottom: 10px;
-		padding-top: 149px;
-		font-size: 2.8rem;
-		font-weight: 500;
-	}
-	.friends_inner .box_p a:nth-child(2){
-		background: url(../img/cjw-img-foodEditor.jpg) no-repeat;
-		background-size: cover;
-		border: 3px solid #fff;
-	}
-	.friends_inner .box_p a:last-child h4{
-	    background-image: url(../img/cjw-icon-meetingTalk.png);
-	}
-	.friends_inner .box_p p{
-		font-size: 1.6rem;
-		width: 277px;
-		margin: 0 auto;
-		line-height: 1.25;
-	}
-	.friends_inner .box{
-		display: none;
-	}
-	#sns{
-		padding: 159px 0 146px;
-	}
-	.sns_inner {
-		width: 66.46%;
-	}
-	.sns_inner .title{
-		display: inline-block;
-		text-align: left;
-	}
-	.sns_inner .title h2{
-		font-size: 8rem;
-		margin-bottom: 26px;
-	}
-	.sns_inner .title p{
-		font-size: 2.8rem;
-	}
-	.sns_inner .sns_link{
-		width: 30%;
-		margin: 0;
-		margin-bottom: 60px;
-	}
-	.sns_inner .sns_link ul li{
-		width: calc((100% - 48px)/5);
-	}
-	.sns_inner .sns_link ul li:last-child{
-		width: auto;
-	}
-	.sns_inner .sns_link ul li a{
-		width: 48px;
-		height: 48px;
-	}
-	.sns_inner .notice_box{
-		display: block;
-		width: 33.2%;
-		height: 279px;
-		background-color: #f8f7f7;
-		border: 3px solid #f8f7f7;
-		position: absolute;
-		top: 159px;
-		right: 16.8%;
-		padding: 37px 40px 40px 40px;
-	}
-	.sns_inner .notice_box h5{
-		font-size: 1.8rem;
-		margin-bottom: 5px;
-		padding-bottom: 20px;
-		border-bottom: 3px solid #e3e3e3;
-	}
-	.sns_inner .notice_box .list_tit{
-		margin-left: 19px;
-		width: 100%;
-	}
-	.sns_inner .notice_box .list_tit > li{
-		width: 100%;
-		float: left;
-		list-style: disc;
-		
-	}
-	.sns_inner .notice_box .list_tit > li a{
-		color: #494949;
-	}
-	.sns_inner .notice_box .list_tit a{
-		font-size: 2rem;
-		line-height: 2.25;
-	}
-	.sns_inner .notice_box .list_tit ul{
-		width: 70%;
-		float: right;
-	}
-	.sns_inner .notice_box .list_tit ul li{
-		float: left;
-	}
-	.sns_inner .notice_box .list_tit ul li a{
-		color: #787878;
-	}
-	.sns_inner .notice_box a.notice_plus{
-		display: block;
-		width: 30px;
-		height: 30px;
-		position: absolute;
-		right: 40px;
-		top: 26px;
-		padding: 20px;
-		background: url(../img/cjw-plus-section-grey.png)no-repeat;
-		background-position: center;
-	}
-	.sns_inner .sns_con{
-		overflow: hidden;
-		height: 300px;
-	}
-	.sns_inner .sns_con:after{
-		z-index: -1;
-	}
-	.sns_inner .sns_con a{
-		float: left;
-		width: 50%;
-		height: 100%;
-		border: 2px solid #f8f7f7;
-	}
-	.sns_inner .sns_con a span{
-		width: 50%;
-	}
-	.sns_inner .sns_con a .txt{
-		padding: 36px 24px 34px 20px;
-	}
-	.sns_inner .sns_con .txt h3{
-		background-size: 32px;
-		margin-bottom: 108px;
-	}
-	.sns_inner .sns_con .txt p{
-		position: static;
-	}
-	.sns_inner .sns_con a:last-child{
-		border-left: none;
-	}
-	.sns_inner .sns_con a:last-child span{
-		float: left;
-		width: 50%;
-	}
-	.sns_inner .sns_con a:last-child .txt{
-		float: left;
-		margin: 0;
-	}
-	/* footer */
-	#footer{
-		border-top: 2px solid #e5e5e5;;
-	}
-	#footer .container{
-		width: 66.46%;
-		margin: 0 auto;
-	}
-	.link_wrap{
-		height: 100px;
-	}
-	.link_wrap > a{
-		display: none;
-	}
-	.link_wrap ul.foot_btn{
-		float: left;
-	}
-	.link_wrap ul.foot_btn li{
-		height: 100px;
-		line-height: 100px;
-	}
-	.link_wrap .foot_btn li:nth-of-type(1) a:before{
-		display: none;
-	}
-	.link_wrap ul.foot_btn li.pc_only:last-child{
-		display: block;
-	}
-	.link_wrap .foot_sns{
-		width: 20%;
-		float: right;
-		margin-top: 34px;
-	}
-	.link_wrap .foot_sns li{
-		width: calc((100% - 33px)/5);
-		text-indent: -9999em;
-		float: left;
-	}
-	.link_wrap .foot_sns li:nth-of-type(6){
-		width: auto;
-	}
-	.foot_sns li a{
-		display: block;
-		float: left;
-		width: 33px;
-		height: 33px;
-		background: url(../img/cjw-sns-facebook-grey.png)no-repeat;
-	}
-	.foot_sns li:nth-of-type(2) a{
-		background-image: url(../img/cjw-sns-kakao-grey.png);
-	}
-	.foot_sns li:nth-of-type(3) a{
-		background-image: url(../img/cjw-sns-naver-grey.png);
-	}
-	.foot_sns li:nth-of-type(4) a{
-		background-image: url(../img/cjw-sns-twitter-grey.png);
-	}
-	.foot_sns li:nth-of-type(5) a{
-		background-image: url(../img/cjw-sns-instagram-grey.png);
-	}
-	.foot_sns li:nth-of-type(6) a{
-		background-image: url(../img/cjw-sns-youtube-grey.png);
-	}
-	.copy_wrap{
-		padding-bottom: 77px;
-	}
-	.copy_wrap .copy {
-		position: relative;
-		width: 66.46%;
-		margin: 35px auto 0;
-	}
-	.copy_wrap .copy p{
-		margin-top: auto;
-	}
-	.copy_wrap .copy p:last-child{
-		width: auto;
-		height: auto;
-		position: absolute;
-		left: 9%;
-		top: 60px;
-	}
-	.copy_wrap .copy > span{
-		width: 61px;
-		height: 87px;
-		margin-right: 3%;
-	}
-	.copy_wrap .copy > div:nth-of-type(1){
-		width: 64px;
-		height: 66px;
-		margin-top: auto;
-		background-size: contain;
-	}
-	.copy_wrap .copy > div:nth-of-type(2){
-		width: 64px;
-		height: 56px;
-		margin-top: auto;
-		background-size: contain;
-	}
-
-
-
-
+  .friends_inner .title h3 {
+    font-size: 8rem;
+  }
+  .friends_inner .title a {
+    width: 330px;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 2.2rem;
+  }
+  .friends_inner .title a:after {
+    margin-left: 30px;
+  }
+  .friends_inner .friends_b {
+    width: 50%;
+    height: 597px;
+    position: absolute;
+    left: 0;
+    top: 300px;
+    margin-top: 0;
+  }
+  .friends_inner .banner:nth-of-type(2) {
+    width: 50%;
+    height: 300px;
+    position: relative;
+    padding: 34px 4.3% 48px;
+    border-radius: 4px 4px 0 0;
+    text-align: left;
+  }
+  .friends_inner .banner:nth-of-type(2)::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 196px;
+    margin-top: auto;
+    top: 62px;
+    right: 54px;
+    background: url(../img/cjw-icon-friendsPanel.png) no-repeat;
+    background-size: contain;
+  }
+  .friends_inner .banner:nth-of-type(2) p::after {
+    margin: 56px 0 0;
+  }
+  .friends_inner .banner:nth-of-type(2) h4 {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .friends_inner .banner:nth-of-type(2) p {
+    display: inline-block;
+    font-size: 2.2rem;
+    line-height: 26px;
+  }
+  .friends_inner .banner:nth-of-type(2) p:after {
+    width: 150px;
+    height: 40px;
+    border-radius: 2px;
+    font-size: 1.6rem;
+    line-height: 40px;
+  }
+  .friends_inner .friends_b span:last-child {
+    width: 150px;
+    height: 40px;
+    border-radius: 2px;
+    line-height: 40px;
+    font-size: 1.6rem;
+  }
+  .friends_inner .friends_b p {
+    font-size: 2.2rem;
+    line-height: 1.18;
+  }
+  .friends_inner .friends_b .bg {
+    width: 224px;
+    height: 232px;
+  }
+  .friends_inner .box_p {
+    display: block;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 300px;
+  }
+  .friends_inner .box_p a {
+    display: inline-block;
+    width: 50%;
+    height: 298.5px;
+    background-color: #fff;
+    padding-top: 48px;
+    text-align: center;
+  }
+  .friends_inner .box_p a:last-child {
+    float: right;
+  }
+  .friends_inner .box_p h4 {
+    background: url(../img/cjw-icon-foodEditor.png) no-repeat top center;
+    background-size: 130px;
+    margin-bottom: 10px;
+    padding-top: 149px;
+    font-size: 2.8rem;
+    font-weight: 500;
+  }
+  .friends_inner .box_p a:nth-child(2) {
+    background: url(../img/cjw-img-foodEditor.jpg) no-repeat;
+    background-size: cover;
+    border: 3px solid #fff;
+  }
+  .friends_inner .box_p a:last-child h4 {
+    background-image: url(../img/cjw-icon-meetingTalk.png);
+  }
+  .friends_inner .box_p p {
+    font-size: 1.6rem;
+    width: 277px;
+    margin: 0 auto;
+    line-height: 1.25;
+  }
+  .friends_inner .box {
+    display: none;
+  }
+  #sns {
+    padding: 159px 0 146px;
+  }
+  .sns_inner {
+    width: 66.46%;
+  }
+  .sns_inner .title {
+    display: inline-block;
+    text-align: left;
+  }
+  .sns_inner .title h2 {
+    font-size: 8rem;
+    margin-bottom: 26px;
+  }
+  .sns_inner .title p {
+    font-size: 2.8rem;
+  }
+  .sns_inner .sns_link {
+    width: 30%;
+    margin: 0;
+    margin-bottom: 60px;
+  }
+  .sns_inner .sns_link ul li {
+    width: calc((100% - 48px) / 5);
+  }
+  .sns_inner .sns_link ul li:last-child {
+    width: auto;
+  }
+  .sns_inner .sns_link ul li a {
+    width: 48px;
+    height: 48px;
+  }
+  .sns_inner .notice_box {
+    display: block;
+    width: 33.2%;
+    height: 279px;
+    background-color: #f8f7f7;
+    border: 3px solid #f8f7f7;
+    position: absolute;
+    top: 159px;
+    right: 16.8%;
+    padding: 37px 40px 40px 40px;
+  }
+  .sns_inner .notice_box h5 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #e3e3e3;
+  }
+  .sns_inner .notice_box .list_tit {
+    margin-left: 19px;
+    width: 100%;
+  }
+  .sns_inner .notice_box .list_tit > li {
+    width: 100%;
+    float: left;
+    list-style: disc;
+  }
+  .sns_inner .notice_box .list_tit > li a {
+    color: #494949;
+  }
+  .sns_inner .notice_box .list_tit a {
+    font-size: 2rem;
+    line-height: 2.25;
+  }
+  .sns_inner .notice_box .list_tit ul {
+    width: 70%;
+    float: right;
+  }
+  .sns_inner .notice_box .list_tit ul li {
+    float: left;
+  }
+  .sns_inner .notice_box .list_tit ul li a {
+    color: #787878;
+  }
+  .sns_inner .notice_box a.notice_plus {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 40px;
+    top: 26px;
+    padding: 20px;
+    background: url(../img/cjw-plus-section-grey.png) no-repeat;
+    background-position: center;
+  }
+  .sns_inner .sns_con {
+    overflow: hidden;
+    height: 300px;
+  }
+  .sns_inner .sns_con:after {
+    z-index: -1;
+  }
+  .sns_inner .sns_con a {
+    float: left;
+    width: 50%;
+    height: 100%;
+    border: 2px solid #f8f7f7;
+  }
+  .sns_inner .sns_con a span {
+    width: 50%;
+  }
+  .sns_inner .sns_con a .txt {
+    padding: 36px 24px 34px 20px;
+  }
+  .sns_inner .sns_con .txt h3 {
+    background-size: 32px;
+    margin-bottom: 108px;
+  }
+  .sns_inner .sns_con .txt p {
+    position: static;
+  }
+  .sns_inner .sns_con a:last-child {
+    border-left: none;
+  }
+  .sns_inner .sns_con a:last-child span {
+    float: left;
+    width: 50%;
+  }
+  .sns_inner .sns_con a:last-child .txt {
+    float: left;
+    margin: 0;
+  }
+  /* footer */
+  #footer {
+    border-top: 2px solid #e5e5e5;
+  }
+  #footer .container {
+    width: 66.46%;
+    margin: 0 auto;
+  }
+  .link_wrap {
+    height: 100px;
+  }
+  .link_wrap > a {
+    display: none;
+  }
+  .link_wrap ul.foot_btn {
+    float: left;
+  }
+  .link_wrap ul.foot_btn li {
+    height: 100px;
+    line-height: 100px;
+  }
+  .link_wrap .foot_btn li:nth-of-type(1) a:before {
+    display: none;
+  }
+  .link_wrap ul.foot_btn li.pc_only:last-child {
+    display: block;
+  }
+  .link_wrap .foot_sns {
+    width: 20%;
+    float: right;
+    margin-top: 34px;
+  }
+  .link_wrap .foot_sns li {
+    width: calc((100% - 33px) / 5);
+    text-indent: -9999em;
+    float: left;
+  }
+  .link_wrap .foot_sns li:nth-of-type(6) {
+    width: auto;
+  }
+  .foot_sns li a {
+    display: block;
+    float: left;
+    width: 33px;
+    height: 33px;
+    background: url(../img/cjw-sns-facebook-grey.png) no-repeat;
+  }
+  .foot_sns li:nth-of-type(2) a {
+    background-image: url(../img/cjw-sns-kakao-grey.png);
+  }
+  .foot_sns li:nth-of-type(3) a {
+    background-image: url(../img/cjw-sns-naver-grey.png);
+  }
+  .foot_sns li:nth-of-type(4) a {
+    background-image: url(../img/cjw-sns-twitter-grey.png);
+  }
+  .foot_sns li:nth-of-type(5) a {
+    background-image: url(../img/cjw-sns-instagram-grey.png);
+  }
+  .foot_sns li:nth-of-type(6) a {
+    background-image: url(../img/cjw-sns-youtube-grey.png);
+  }
+  .copy_wrap {
+    padding-bottom: 77px;
+  }
+  .copy_wrap .copy {
+    position: relative;
+    width: 66.46%;
+    margin: 35px auto 0;
+  }
+  .copy_wrap .copy p {
+    margin-top: auto;
+  }
+  .copy_wrap .copy p:last-child {
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 9%;
+    top: 60px;
+  }
+  .copy_wrap .copy > span {
+    width: 61px;
+    height: 87px;
+    margin-right: 3%;
+  }
+  .copy_wrap .copy > div:nth-of-type(1) {
+    width: 64px;
+    height: 66px;
+    margin-top: auto;
+    background-size: contain;
+  }
+  .copy_wrap .copy > div:nth-of-type(2) {
+    width: 64px;
+    height: 56px;
+    margin-top: auto;
+    background-size: contain;
+  }
 }
